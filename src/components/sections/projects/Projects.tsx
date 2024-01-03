@@ -9,7 +9,10 @@ export const Projects =(): React.ReactElement => {
         <React.Fragment>
             <Spacer style={{ height: '80px' }} />
             <Container>
-
+                <div id="projects">
+                    <h2 className="h2-projects-title">Latest Projects</h2>
+                    <p className="p-projects-desc">Some of the projects I've <span className="span-highlight">developed</span> and I've been <span className="span-highlight">part</span> of.</p>
+                </div>
             </Container>
         </React.Fragment>
     )

@@ -1,0 +1,15 @@
+.h2-projects-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27pt;
+    color: #1C2120;
+}
+.p-projects-desc {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #1C2120;
+}
