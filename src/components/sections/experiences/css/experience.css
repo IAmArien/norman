@@ -1,0 +1,91 @@
+.h2-experience-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27pt;
+    color: #1C2120;
+}
+.div-experience-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #feeded;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.fa-experience-icon {
+    width: 25px;
+    height: 25px;
+    color: #ef4444;
+    margin-top: 16px;
+}
+.css-14yr603-MuiStepContent-root {
+    margin-left: 29px !important;
+}
+.css-1pe7n21-MuiStepConnector-root {
+    margin-left: 29px !important;
+}
+.div-experience-position {
+    margin-left: 20px;
+    box-shadow: 0px 0px 6px #0000000F;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    width: 98.5%;
+    display: flex;
+}
+.div-experience-title-content {
+    flex: 15;
+}
+.fa-experience-toggle-icon {
+    flex: 1;
+    align-self: center;
+    font-size: 17pt;
+    color: #ef4444;
+    cursor: pointer;
+}
+.h2-experience-company {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13pt;
+    color: #1C2120;
+    padding-top: 20px;
+}
+.p-experience-duration {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
+}
+.div-experience-description {
+    margin-left: 40px;
+    box-shadow: 0px 0px 6px #0000000F;
+    padding: 20px;
+    border-radius: 10px;
+    width: 97.6%;
+}
+.padd-left {
+    margin-left: 57px !important;
+}
+.width-dec {
+    width: 96.2% !important;
+}
+.p-experience-content {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
+}
+.p-experience-desc {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #1C2120;
+}
+.current-employer {
+    background-color: #fef7f5;
+}

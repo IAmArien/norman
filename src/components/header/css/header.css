@@ -1,0 +1,95 @@
+.nav-header-container {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+}
+.nav-bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #fef7f5 !important;
+}
+.nav-menu-items {
+    margin-left: auto;
+}
+.auto-padder {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.nav-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    /* color: #1C2120 !important; */
+    color: #1C2120 !important;
+}
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nav-link {
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 11pt;
+    font-weight: 600;
+    color: #1C2120;
+}
+.nav-link.active {
+    font-weight: 700;
+    color: #ef4444 !important;
+}
+.nav-hover {
+    width: 100%;
+    height: 2px;
+}
+.nav-hover.active {
+    margin: auto;
+    background-color: #ef4444;
+    width: 100%;
+    transition: .7s;
+}
+.nav-hover.inactive {
+    margin: auto;
+    background-color: #CCCCCC;
+    width: 0% !important;
+    transition: .7s;
+}
+
+#about:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+#whatIdo:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+#experience:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+#projects:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+#skills:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+#more:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+
+.nav-btn {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+}
+.nav-btn-download {
+    --bs-btn-active-color: #ef4444;
+    --bs-btn-active-bg: #fef7f5;
+    --bs-btn-active-border-color: #ef4444;
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: #ef4444;
+    --bs-btn-border-color: #ef4444;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ef4444;
+    --bs-btn-hover-border-color: #ef4444;
+}

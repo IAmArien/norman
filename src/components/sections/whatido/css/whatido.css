@@ -1,0 +1,60 @@
+.h2-whatIdo-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27pt;
+    color: #1C2120;
+}
+.p-whatIdo-desc {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #1C2120;
+}
+.span-highlight {
+    color: #ef4444;
+    font-weight: 700;
+}
+.div-whatIdo-card {
+    border: 0px solid #6f7684;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0px 0px 5px #0000000F;
+    min-height: 260px;
+}
+.div-whatIdo-icon-container {
+    display: flex;
+    flex-direction: row;
+}
+.div-whatIdo-icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #feeded;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+.fa-whatIdo-icon {
+    width: 25px;
+    height: 25px;
+    color: #ef4444;
+    margin-top: 12px;
+}
+.h3-whatIdo-card-title {
+    margin-top: 25px;
+    color: #1C2120;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13pt;
+}
+.p-whatIdo-card-desc {
+    margin-top: 15px;
+    color: #6b7280;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+}

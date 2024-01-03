@@ -1,0 +1,68 @@
+.about-content-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #fef7f5;
+    margin-top: 74px;
+}
+.h2-sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12pt;
+    /* color: #6b7280; */
+    color: #1C2120;
+}
+.h1-major-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27pt;
+    color: #1C2120;
+}
+.p-about-desc {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12pt;
+    color: #1C2120;
+}
+.div-about-button-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.btn-about {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11pt;
+}
+.btn-hire-me {
+    --bs-btn-active-color: #ef4444;
+    --bs-btn-active-bg: #fef7f5;
+    --bs-btn-active-border-color: #ef4444;
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: #ef4444;
+    --bs-btn-border-color: #ef4444;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ef4444;
+    --bs-btn-hover-border-color: #ef4444;
+}
+.btn-download-cv {
+    --bs-btn-active-color: #FFFFFF;
+    --bs-btn-active-bg: #ef4444;
+    --bs-btn-active-border-color: #ef4444;
+    --bs-btn-color: #ef4444;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #ef4444;
+    --bs-btn-hover-color: #ef4444;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #ef4444;
+}
+.img-about-photo {
+    width: 100%;
+    height: auto;
+}
