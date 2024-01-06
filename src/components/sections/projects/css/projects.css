@@ -22,5 +22,60 @@
     box-shadow: 0px 0px 6px #0000000F;
     background-color: #FFFFFF;
     border-radius: 7px;
+    height: 100%;
+}
+.img-project-cover {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.div-projects-details {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.div-project-covers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.img-project-cover-list {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.img-project-cover-list:hover {
+    opacity: 0.5;
+}
+.project-cover-selected {
+    border: 2px solid #ef4444;
+    padding: 2px;
+}
+.project-cover-unselected {
+    border: 2px solid #feeded;
+    padding: 2px;
+}
+.h2-project-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18pt;
+    color: #1C2120;
+}
+.p-project-owner {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11pt;
+    color: #01875f;
+}
+.p-project-description {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
 }
