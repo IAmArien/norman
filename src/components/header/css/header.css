@@ -4,7 +4,8 @@
 }
 .nav-bg-light {
     --bs-bg-opacity: 1;
-    background-color: #fef7f5 !important;
+    /* background-color: #fef7f5 !important; */
+    background-color: #FFFFFF !important;
 }
 .nav-menu-items {
     margin-left: auto;

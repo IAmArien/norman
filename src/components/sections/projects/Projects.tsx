@@ -56,6 +56,9 @@ const ProjectCoverItem: React.FC<ProjectCoverItemProps> =(props): React.ReactEle
                                 if (index == 0) {
                                     className += " ";
                                     className += "project-cover-selected";
+                                } else {
+                                    className += " ";
+                                    className += "project-cover-unselected";
                                 }
                                 return (
                                     <React.Fragment key={index}>
@@ -103,7 +106,7 @@ export const Projects =(): React.ReactElement => {
                         <h2 className="h2-projects-title">Latest Projects</h2>
                         <p className="p-projects-desc">Some of the projects I've <span className="span-highlight">developed</span> and I've been <span className="span-highlight">part</span> of.</p>
                         <Row>
-                            <Col lg={6} md={12} sm={12}>
+                            <Col lg={4} md={12} sm={12}>
                                 <ProjectCoverItem
                                     keyName="earnest-metrobank"
                                     title="Earnest"
@@ -117,7 +120,7 @@ export const Projects =(): React.ReactElement => {
                                     covers={[ earnestProjectCover1, earnestProjectCover2, earnestProjectCover3 ]}
                                 />
                             </Col>
-                            <Col lg={6} md={12} sm={12}>
+                            <Col lg={4} md={12} sm={12}>
                                 <ProjectCoverItem
                                     keyName="squadzip-dse"
                                     title="Squadzip"
@@ -130,9 +133,7 @@ export const Projects =(): React.ReactElement => {
                                     covers={[ squadzipCover1, squadzipCover2 ]}
                                 />
                             </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={6} md={12} sm={12}>
+                            <Col lg={4} md={12} sm={12}>
                                 <ProjectCoverItem
                                     keyName="snr-shopping"
                                     title="S&R Membership Shopping"
@@ -146,7 +147,9 @@ export const Projects =(): React.ReactElement => {
                                     covers={[ snrShoppingCover1, snrShoppingCover2, snrShoppingCover3 ]}
                                 />
                             </Col>
-                            <Col lg={6} md={12} sm={12}>
+                        </Row>
+                        <Row>
+                            <Col lg={4} md={12} sm={12}>
                                 <ProjectCoverItem
                                     keyName="snr-pizza"
                                     title="S&R Pizza"
