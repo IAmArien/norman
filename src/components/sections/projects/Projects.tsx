@@ -18,6 +18,9 @@ import snrShoppingCover3 from '../../../assets/images/snr_cover_3.png';
 import pizzaCover1 from '../../../assets/images/pizza_cover_1.png';
 import pizzaCover2 from '../../../assets/images/pizza_cover_2.png';
 
+import triBookingCover1 from '../../../assets/images/tri_booking_cover.png';
+import agroModernCover1 from '../../../assets/images/agro_modern_cover.png';
+
 type ProjectCoverItemProps = {
     title: string,
     company: string,
@@ -140,9 +143,7 @@ export const Projects =(): React.ReactElement => {
                                     company="S&R Mobile Apps"
                                     description="
                                         From the membership shopping chain that brought you the world-class shopping experience, the S&R Shopping app now brings the world right at your doorstep!\n\n
-                                        Download the S&R Shopping mobile app now and enjoy these exciting deals and services!\n
-                                        FREE DELIVERY FEE: For a minimum spend of ₱5,000, extra fees on delivery will be waived.\n
-                                        FREE REUSABLE BAGS: Purchased items come in S&R eco bags—no extra fees either! "
+                                        Download the S&R Shopping mobile app now and enjoy these exciting deals and services! "
                                     hasSeeMore
                                     covers={[ snrShoppingCover1, snrShoppingCover2, snrShoppingCover3 ]}
                                 />
@@ -156,10 +157,29 @@ export const Projects =(): React.ReactElement => {
                                     company="S&R Mobile Apps"
                                     description="
                                         Now’s the time to enjoy your favorite S&R Pizza! Download S&R Pizza app today, and enjoy all the perks of ordering and delivery for FREE, plus receive 20% off for PWD & Senior Citizens!\n\n
-                                        Delivery: Enjoy the convenience of our hassle-free online ordering and delivery for FREE!\n\n
-                                        Discounts for PWD & Senior Citizen: Enjoy 20% off on all main course, drinks, side dish and dessert by simply uploading a photo of your PWD or Senior Citizen ID."
+                                        Delivery: Enjoy the convenience of our hassle-free online ordering and delivery for FREE! "
                                     hasSeeMore
                                     covers={[ pizzaCover1, pizzaCover2 ]}
+                                />
+                            </Col>
+                            <Col lg={4} md={12} sm={12}>
+                                <ProjectCoverItem
+                                    keyName="tri-booking"
+                                    title="Tricycle Booking App"
+                                    company="Personal Project"
+                                    description="Tricycle Booking App is a mobile application for booking of tricycles in Pangasinan Province. The application is now in its staging level, but was currently paused due to insufficient funds and supports."
+                                    hasSeeMore={false}
+                                    covers={[ triBookingCover1 ]}
+                                />
+                            </Col>
+                            <Col lg={4} md={12} sm={12}>
+                                <ProjectCoverItem
+                                    keyName="agro-modern"
+                                    title="Agro Modern"
+                                    company="Personal Project"
+                                    description="Agro Modern is a web and mobile-based Application that focuses on addressing multiple problems in the agriculture and government sectors. It is primarily intended to benefit farmers in terms of supply chain and market information."
+                                    hasSeeMore={false}
+                                    covers={[ agroModernCover1 ]}
                                 />
                             </Col>
                         </Row>
