@@ -20,10 +20,10 @@ const ExperienceIcon =(): React.ReactElement => {
 
 export const Experience =(): React.ReactElement => {
     const [isNovareActive, setIsNovareActive] = React.useState(true);
-    const [isYonduActive, setIsYonduActive] = React.useState(true);
-    const [isDSEActive, setIsDSEActive] = React.useState(true);
-    const [isIngramActive, setIsIngramActive] = React.useState(true);
-    const [isPhinmaActive, setIsPhinmaActive] = React.useState(true);
+    const [isYonduActive, setIsYonduActive] = React.useState(false);
+    const [isDSEActive, setIsDSEActive] = React.useState(false);
+    const [isIngramActive, setIsIngramActive] = React.useState(false);
+    const [isPhinmaActive, setIsPhinmaActive] = React.useState(false);
     return (
         <React.Fragment>
             <Spacer style={{ height: '80px' }} />
@@ -35,7 +35,7 @@ export const Experience =(): React.ReactElement => {
                     <Stepper alternativeLabel={false} orientation="vertical">
                         <Step active={isNovareActive}>
                             <StepLabel StepIconComponent={() => <ExperienceIcon />}>
-                                <div className="div-experience-position current-employer">
+                                <div className="div-experience-position" onClick={() => setIsNovareActive(!isNovareActive)}>
                                     <div className="div-experience-title-content">
                                         <h2 className="h2-experience-company">MDI Novare | Sr. Software Engineer</h2>
                                         <p className="p-experience-duration">August 2023 - Present</p>
@@ -63,12 +63,16 @@ export const Experience =(): React.ReactElement => {
                         </Step>
                         <Step active={isYonduActive}>
                             <StepLabel StepIconComponent={() => <ExperienceIcon />}>
-                                <div className="div-experience-position">
+                                <div className="div-experience-position" onClick={() => setIsYonduActive(!isYonduActive)}>
                                     <div className="div-experience-title-content">
                                         <h2 className="h2-experience-company">YONDU INC. | Software Engineer (Android Kotlin)</h2>
                                         <p className="p-experience-duration">October 2022 - October 2023</p>
                                     </div>
-                                    <FontAwesomeIcon icon={isYonduActive ? faChevronUp : faChevronDown} className="fa-experience-toggle-icon" onClick={() => setIsYonduActive(!isYonduActive)}/>
+                                    <FontAwesomeIcon
+                                        icon={isYonduActive ? faChevronUp : faChevronDown}
+                                        className="fa-experience-toggle-icon"
+                                        onClick={() => setIsYonduActive(!isYonduActive)}
+                                    />
                                 </div>
                             </StepLabel>
                             <StepContent TransitionProps={{ unmountOnExit: false }}>
@@ -85,12 +89,16 @@ export const Experience =(): React.ReactElement => {
                         </Step>
                         <Step active={isDSEActive}>
                             <StepLabel StepIconComponent={() => <ExperienceIcon />}>
-                                <div className="div-experience-position">
+                                <div className="div-experience-position" onClick={() => setIsDSEActive(!isDSEActive)}>
                                     <div className="div-experience-title-content">
                                         <h2 className="h2-experience-company">Digital Space Explorer, INC. | Android Application Developer / Consultant</h2>
                                         <p className="p-experience-duration">February 2021 - July 2023</p>
                                     </div>
-                                    <FontAwesomeIcon icon={isDSEActive ? faChevronUp : faChevronDown} className="fa-experience-toggle-icon" onClick={() => setIsDSEActive(!isDSEActive)}/>
+                                    <FontAwesomeIcon
+                                        icon={isDSEActive ? faChevronUp : faChevronDown}
+                                        className="fa-experience-toggle-icon"
+                                        onClick={() => setIsDSEActive(!isDSEActive)}
+                                    />
                                 </div>
                             </StepLabel>
                             <StepContent TransitionProps={{ unmountOnExit: false }}>
@@ -108,12 +116,16 @@ export const Experience =(): React.ReactElement => {
                         </Step>
                         <Step active={isIngramActive}>
                             <StepLabel StepIconComponent={() => <ExperienceIcon />}>
-                                <div className="div-experience-position">
+                                <div className="div-experience-position" onClick={() => setIsIngramActive(!isIngramActive)}>
                                     <div className="div-experience-title-content">
                                         <h2 className="h2-experience-company">Ingram Micro Philippines. | Information Systems Analyst</h2>
                                         <p className="p-experience-duration">December 2019 - April 2020</p>
                                     </div>
-                                    <FontAwesomeIcon icon={isIngramActive ? faChevronUp : faChevronDown} className="fa-experience-toggle-icon" onClick={() => setIsIngramActive(!isIngramActive)}/>
+                                    <FontAwesomeIcon
+                                        icon={isIngramActive ? faChevronUp : faChevronDown}
+                                        className="fa-experience-toggle-icon"
+                                        onClick={() => setIsIngramActive(!isIngramActive)}
+                                    />
                                 </div>
                             </StepLabel>
                             <StepContent TransitionProps={{ unmountOnExit: false }}>
@@ -129,12 +141,16 @@ export const Experience =(): React.ReactElement => {
                         </Step>
                         <Step active={isPhinmaActive}>
                             <StepLabel StepIconComponent={() => <ExperienceIcon />}>
-                                <div className="div-experience-position">
+                                <div className="div-experience-position" onClick={() => setIsPhinmaActive(!isPhinmaActive)}>
                                     <div className="div-experience-title-content">
                                         <h2 className="h2-experience-company">PHINMA UPang. | Android Application Developer</h2>
                                         <p className="p-experience-duration">June 2019 - November 2019</p>
                                     </div>
-                                    <FontAwesomeIcon icon={isPhinmaActive ? faChevronUp : faChevronDown} className="fa-experience-toggle-icon" onClick={() => setIsPhinmaActive(!isPhinmaActive)}/>
+                                    <FontAwesomeIcon
+                                        icon={isPhinmaActive ? faChevronUp : faChevronDown}
+                                        className="fa-experience-toggle-icon"
+                                        onClick={() => setIsPhinmaActive(!isPhinmaActive)}
+                                    />
                                 </div>
                             </StepLabel>
                             <StepContent TransitionProps={{ unmountOnExit: false }}>

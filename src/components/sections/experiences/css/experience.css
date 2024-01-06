@@ -27,11 +27,16 @@
 }
 .div-experience-position {
     margin-left: 20px;
-    box-shadow: 0px 0px 6px #0000000F;
     padding: 5px 20px 5px 20px;
-    border-radius: 10px;
+    border-radius: 0px;
+    border-bottom: 2px solid #0000000F;
     width: 98.5%;
     display: flex;
+    cursor: pointer;
+}
+.div-experience-position:hover {
+    box-shadow: 0px 0px 6px #0000000F;
+    background-color: #fef7f5;
 }
 .div-experience-title-content {
     flex: 15;
@@ -60,7 +65,7 @@
 }
 .div-experience-description {
     margin-left: 40px;
-    box-shadow: 0px 0px 6px #0000000F;
+    /* box-shadow: 0px 0px 6px #0000000F; */
     padding: 20px;
     border-radius: 10px;
     width: 97.6%;
