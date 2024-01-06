@@ -1,11 +1,11 @@
 .nav-header-container {
-    padding-top: 14px !important;
-    padding-bottom: 14px !important;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 .nav-bg-light {
     --bs-bg-opacity: 1;
     /* background-color: #fef7f5 !important; */
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
 }
 .nav-menu-items {
     margin-left: auto;
@@ -20,7 +20,10 @@
     font-style: normal;
     font-weight: 600 !important;
     /* color: #1C2120 !important; */
-    color: #1C2120 !important;
+    color: #1C2120;
+}
+.nav-brand-light {
+    color: #FFFFFF !important;
 }
 .nav-item {
     margin-left: 5px;
@@ -32,11 +35,16 @@
     font-style: normal;
     font-size: 11pt;
     font-weight: 600;
+}
+.nav-span {
     color: #1C2120;
 }
-.nav-link.active {
+.nav-span.active {
+    color: #ef4444;
     font-weight: 700;
-    color: #ef4444 !important;
+}
+.nav-link-light {
+    color: #FFFFFF !important;
 }
 .nav-hover {
     width: 100%;
@@ -48,6 +56,9 @@
     width: 100%;
     transition: .7s;
 }
+.nav-hover-active-light {
+    background-color: #FFFFFF !important;
+}
 .nav-hover.inactive {
     margin: auto;
     background-color: #CCCCCC;
@@ -55,22 +66,22 @@
     transition: .7s;
 }
 
-#about:hover ~ .nav-hover.inactive {
+#aboutNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
-#whatIdo:hover ~ .nav-hover.inactive {
+#whatIdoNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
-#experience:hover ~ .nav-hover.inactive {
+#experienceNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
-#projects:hover ~ .nav-hover.inactive {
+#projectsNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
-#skills:hover ~ .nav-hover.inactive {
+#skillsNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
-#more:hover ~ .nav-hover.inactive {
+#moreNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
 
@@ -82,6 +93,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 11pt;
+    margin-top: 5px;
 }
 .nav-btn-download {
     --bs-btn-active-color: #ef4444;
@@ -93,4 +105,15 @@
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #ef4444;
     --bs-btn-hover-border-color: #ef4444;
+}
+.nav-btn-download-light {
+    --bs-btn-active-color: #FFFFFF !important;
+    --bs-btn-active-bg: #ef4444 !important;
+    --bs-btn-active-border-color: #FFFFFF !important;
+    --bs-btn-color: #ef4444 !important;
+    --bs-btn-bg: #FFFFFF !important;
+    --bs-btn-border-color: #FFFFFF !important;
+    --bs-btn-hover-color: #ef4444 !important;
+    --bs-btn-hover-bg: #FFFFFF !important;
+    --bs-btn-hover-border-color: #FFFFFF !important;
 }
