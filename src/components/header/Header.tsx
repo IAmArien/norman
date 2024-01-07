@@ -38,6 +38,13 @@ export const Header =(): React.ReactElement => {
                                     <span id="moreDropdown" className="nav-span">
                                         <FontAwesomeIcon icon={faChevronDown} />
                                     </span>
+                                    <div className='div-more-extra-menu'>
+                                        <Nav.Item className='nav-more-items' id='nav-more'>
+                                            <Nav.Link className='nav-more-item' href='#skills'>Skills and Technologies</Nav.Link>
+                                            <Nav.Link className='nav-more-item' href='#testimonials'>Testimonials</Nav.Link>
+                                            <Nav.Link className='nav-more-item' href='#contact'>Contact Us</Nav.Link>
+                                        </Nav.Item>
+                                    </div>
                                 </Nav.Link>
                                 <div className='nav-hover inactive'></div>
                             </Nav.Item>
