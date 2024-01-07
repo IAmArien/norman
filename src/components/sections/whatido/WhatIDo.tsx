@@ -17,11 +17,12 @@ export const WhatIDo =(): React.ReactElement => {
                     <p className="p-whatIdo-desc">
                         I create mobile applications for <span className="span-highlight">Android</span>, both native and hybrid, along with <span className="span-highlight">Web</span> applications tailored to meet specific business requirements.
                     </p>
-                    <Spacer style={{ height: '30px' }} />
+                    <Spacer style={{ height: '5px' }} />
                     <Row>
-                        <Col lg={4} md={6} sm={12}>
+                        <Col lg={4} md={6} sm={12} className="pad-top-wid">
                             <div className="div-whatIdo-card">
                                 <div className="div-whatIdo-icon-container">
+                                    
                                     <div className="div-whatIdo-icon-box">
                                         <FontAwesomeIcon icon={faAndroid} className="fa-whatIdo-icon" />
                                     </div>
@@ -41,7 +42,7 @@ export const WhatIDo =(): React.ReactElement => {
                                 </p>
                             </div>
                         </Col>
-                        <Col lg={4} md={6} sm={12}>
+                        <Col lg={4} md={6} sm={12} className="pad-top-wid">
                             <div className="div-whatIdo-card">
                                 <div className="div-whatIdo-icon-container">
                                     <div className="div-whatIdo-icon-box">
@@ -67,7 +68,7 @@ export const WhatIDo =(): React.ReactElement => {
                                 </p>
                             </div>
                         </Col>
-                        <Col lg={4} md={6} sm={12}>
+                        <Col lg={4} md={6} sm={12} className="pad-top-wid">
                             <div className="div-whatIdo-card">
                                 <div className="div-whatIdo-icon-container">
                                     <div className="div-whatIdo-icon-box">

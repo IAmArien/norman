@@ -26,7 +26,8 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 13pt;
+    font-size: 15pt;
+    text-align: center;
 }
 .btn-skills-item {
     font-family: 'Montserrat', sans-serif;
@@ -35,12 +36,13 @@
     font-size: 11pt;
     cursor: default;
     margin-top: 7px;
+    margin-right: 7px;
     --bs-btn-active-color: #FFFFFF;
     --bs-btn-active-bg: #ef4444;
     --bs-btn-active-border-color: #ef4444;
-    --bs-btn-color: #6f7684;
+    --bs-btn-color: #1C2120;
     --bs-btn-bg: transparent;
-    --bs-btn-border-color: #6f7684;
+    --bs-btn-border-color: #1C2120;
     --bs-btn-hover-color: #ef4444;
     --bs-btn-hover-bg: transparent;
     --bs-btn-hover-border-color: #ef4444;
@@ -49,4 +51,16 @@
     width: 100%;
     background-color: #FFFFFF;
     padding-bottom: 80px;
+}
+.pad-top {
+    padding-top: 25px;
+}
+.img-skills-cover {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.div-skills-items {
+    text-align: center;
 }

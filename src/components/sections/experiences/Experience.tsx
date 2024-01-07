@@ -20,10 +20,10 @@ const ExperienceIcon =(): React.ReactElement => {
 
 export const Experience =(): React.ReactElement => {
     const [isNovareActive, setIsNovareActive] = React.useState(true);
-    const [isYonduActive, setIsYonduActive] = React.useState(true);
-    const [isDSEActive, setIsDSEActive] = React.useState(true);
-    const [isIngramActive, setIsIngramActive] = React.useState(true);
-    const [isPhinmaActive, setIsPhinmaActive] = React.useState(true);
+    const [isYonduActive, setIsYonduActive] = React.useState(false);
+    const [isDSEActive, setIsDSEActive] = React.useState(false);
+    const [isIngramActive, setIsIngramActive] = React.useState(false);
+    const [isPhinmaActive, setIsPhinmaActive] = React.useState(false);
     return (
         <React.Fragment>
             <Spacer style={{ height: '80px' }} />

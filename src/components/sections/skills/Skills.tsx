@@ -1,10 +1,12 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
 import './css/skills.css';
 import { Spacer } from "../../utils";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAndroid, faReact, faJava, faNode, faPhp, faJs, faMicrosoft, faJenkins, faGitAlt } from "@fortawesome/free-brands-svg-icons";
+
+import skillsMobileCover from '../../../assets/images/skills_mobile_cover.png';
+import skillsWebCover from '../../../assets/images/skills_web_cover.png';
+import skillsCICDCover from '../../../assets/images/skills_cicd_cover.png';
 
 const mobileSkills = [
     "JAVA & Kotlin",
@@ -76,93 +78,58 @@ export const Skills =(): React.ReactElement => {
                     <div id="skills">
                         <h2 className="h2-skills-title">Skills and Technologies</h2>
                         <p className="p-skills-desc">
-                            Programming Languages, Tools, Development Technologies, and other things that I know and familiar with.
+                            Programming Languages, Tools, Development Technologies, and other things that <span className="span-highlight">I know</span> and <span className="span-highlight">familiar</span> with.
                         </p>
-                        <Spacer style={{ height: '20px' }} />
                         <Row>
-                            <Col lg={4} md={4} sm={12}>
+                            <Col lg={4} md={4} sm={12} className="pad-top">
                                 <div className="div-skills-card">
-                                    <div className="div-whatIdo-icon-container">
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faAndroid} className="fa-whatIdo-icon" />
-                                        </div>
-                                        <Spacer style={{ width: '10px' }} />
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faReact} className="fa-whatIdo-icon" />
-                                        </div>
-                                        <Spacer style={{ width: '10px' }} />
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faJava} className="fa-whatIdo-icon" />
-                                        </div>
-                                    </div>
+                                    <Image className="img-skills-cover" alt={skillsMobileCover} src={skillsMobileCover} />
                                     <Spacer style={{ height: '20px' }} />
                                     <h3 className="h3-skills-card-title">Mobile Application Development</h3>
-                                    <Spacer style={{ height: '22px' }} />
-                                    { mobileSkills.map((skills, index) => {
-                                        return (
-                                            <React.Fragment key={index}>
-                                                <Button className="btn-skills-item" variant="outline-primary" size="sm">{skills}</Button>&nbsp;&nbsp;
-                                            </React.Fragment>
-                                        )
-                                    }) }
+                                    <Spacer style={{ height: '15px' }} />
+                                    <div className="div-skills-items">
+                                        { mobileSkills.map((skills, index) => {
+                                            return (
+                                                <React.Fragment key={index}>
+                                                    <Button className="btn-skills-item" variant="outline-primary" size="sm">{skills}</Button>
+                                                </React.Fragment>
+                                            )
+                                        }) }
+                                    </div>
                                 </div>
                             </Col>
-                            <Col lg={4} md={4} sm={12}>
+                            <Col lg={4} md={4} sm={12} className="pad-top">
                                 <div className="div-skills-card">
-                                    <div className="div-whatIdo-icon-container">
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faReact} className="fa-whatIdo-icon" />
-                                        </div>
-                                        <Spacer style={{ width: '10px' }} />
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faNode} className="fa-whatIdo-icon" />
-                                        </div>
-                                        <Spacer style={{ width: '10px' }} />
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faPhp} className="fa-whatIdo-icon" />
-                                        </div>
-                                        <Spacer style={{ width: '10px' }} />
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faJs} className="fa-whatIdo-icon" />
-                                        </div>
-                                    </div>
+                                    <Image className="img-skills-cover" alt={skillsWebCover} src={skillsWebCover} />
                                     <Spacer style={{ height: '20px' }} />
                                     <h3 className="h3-skills-card-title">Web Application Development</h3>
-                                    <Spacer style={{ height: '22px' }} />
-                                    { webSkills.map((skills, index) => {
-                                        return (
-                                            <React.Fragment key={index}>
-                                                <Button className="btn-skills-item" variant="outline-primary" size="sm">{skills}</Button>&nbsp;&nbsp;
-                                            </React.Fragment>
-                                        )
-                                    }) }
+                                    <Spacer style={{ height: '15px' }} />
+                                    <div className="div-skills-items">
+                                        { webSkills.map((skills, index) => {
+                                            return (
+                                                <React.Fragment key={index}>
+                                                    <Button className="btn-skills-item" variant="outline-primary" size="sm">{skills}</Button>
+                                                </React.Fragment>
+                                            )
+                                        }) }
+                                    </div>
                                 </div>
                             </Col>
-                            <Col lg={4} md={4} sm={12}>
+                            <Col lg={4} md={4} sm={12} className="pad-top">
                                 <div className="div-skills-card">
-                                    <div className="div-whatIdo-icon-container">
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faMicrosoft} className="fa-whatIdo-icon" />
-                                        </div>
-                                        <Spacer style={{ width: '10px' }} />
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faJenkins} className="fa-whatIdo-icon" />
-                                        </div>
-                                        <Spacer style={{ width: '10px' }} />
-                                        <div className="div-whatIdo-icon-box">
-                                            <FontAwesomeIcon icon={faGitAlt} className="fa-whatIdo-icon" />
-                                        </div>
-                                    </div>
+                                    <Image className="img-skills-cover" alt={skillsCICDCover} src={skillsCICDCover} />
                                     <Spacer style={{ height: '20px' }} />
                                     <h3 className="h3-skills-card-title">CI/CD and DevOps</h3>
-                                    <Spacer style={{ height: '22px' }} />
-                                    { cicdDevOps.map((skills, index) => {
-                                        return (
-                                            <React.Fragment key={index}>
-                                                <Button className="btn-skills-item" variant="outline-primary" size="sm">{skills}</Button>&nbsp;&nbsp;
-                                            </React.Fragment>
-                                        )
-                                    }) }
+                                    <Spacer style={{ height: '15px' }} />
+                                    <div className="div-skills-items">
+                                        { cicdDevOps.map((skills, index) => {
+                                            return (
+                                                <React.Fragment key={index}>
+                                                    <Button className="btn-skills-item" variant="outline-primary" size="sm">{skills}</Button>
+                                                </React.Fragment>
+                                            )
+                                        }) }
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

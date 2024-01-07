@@ -116,9 +116,7 @@ export const Projects =(): React.ReactElement => {
                                     company="Metropolitan Bank & Trust Company (METROBANK)"
                                     description="
                                         Earnest helps you invest with confidence so you can prepare for your future.\n\n
-                                        With Earnest, you can learn investing basics and stay updated with relevant news to power your decisions. 
-                                        When you’re ready, you can open a Metrobank Online Time Deposit and earn up to 4.5% interest p.a., 
-                                        depending on how much you put in."
+                                        With Earnest, you can learn investing basics and stay updated with relevant news to power your decisions ... "
                                     hasSeeMore
                                     covers={[ earnestProjectCover1, earnestProjectCover2, earnestProjectCover3 ]}
                                 />
@@ -131,7 +129,7 @@ export const Projects =(): React.ReactElement => {
                                     description="
                                         Squadzip is the digital extension of the office for a growing number of remote working, customer-facing, sales, service, and operations teams. 
                                         Squadzip’s mobile application brings together the ease of use and intuitiveness found on most social media and consumer applications, 
-                                        to the workplace, with the goal of delivering a productivity tool that is easy to use, configure, set up, deploy, and implement."
+                                        to the workplace ... "
                                     hasSeeMore
                                     covers={[ squadzipCover1, squadzipCover2 ]}
                                 />
@@ -155,9 +153,7 @@ export const Projects =(): React.ReactElement => {
                                     keyName="snr-pizza"
                                     title="S&R Pizza"
                                     company="S&R Mobile Apps"
-                                    description="
-                                        Now’s the time to enjoy your favorite S&R Pizza! Download S&R Pizza app today, and enjoy all the perks of ordering and delivery for FREE, plus receive 20% off for PWD & Senior Citizens!\n\n
-                                        Delivery: Enjoy the convenience of our hassle-free online ordering and delivery for FREE! "
+                                    description="Now’s the time to enjoy your favorite S&R Pizza! Download S&R Pizza app today, and enjoy all the perks of ordering and delivery for FREE, plus receive 20% off for PWD & Senior Citizens! ..."
                                     hasSeeMore
                                     covers={[ pizzaCover1, pizzaCover2 ]}
                                 />
