@@ -18,10 +18,10 @@
     font-weight: 700;
 }
 .div-whatIdo-card {
-    border: 0px solid #6f7684;
+    border: 2px solid #efefef;
     border-radius: 8px;
     padding: 25px;
-    box-shadow: 0px 0px 5px #0000000F;
+    /* box-shadow: 0px 0px 5px #0000000F; */
     height: 100%;
 }
 .div-whatIdo-icon-container {

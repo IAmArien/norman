@@ -1,0 +1,108 @@
+.div-contact-us-wrapper {
+    width: 100%;
+    background-color: #fcfcfc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.div-contact-us-details {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.h2-contact-us-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20pt;
+    color: #1C2120;
+}
+.p-contact-us-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
+}
+.h4-email-me-at {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
+}
+.a-email {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12pt;
+    color: #6f7684 !important;
+    text-decoration: none !important;
+}
+.h4-social {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
+}
+.div-social-accounts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+.fa-social-accounts {
+    font-size: 16pt;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #6f7684;
+}
+.div-contact-us-fields {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.input-contact-us {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
+    padding: 10px 15px 10px 15px !important;
+}
+small {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10pt;
+    color: #6f7684;
+    margin-left: 5px;
+}
+.text-area-contact-us {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    color: #6f7684;
+    padding: 10px 15px 10px 15px !important;
+}
+.input-contact-us::placeholder {
+    color: #6f7684 !important;
+}
+.btn-submit-contact-us {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    align-self: flex-end;
+    padding-left: 30px;
+    padding-right: 30px;
+    --bs-btn-active-color: #ef4444;
+    --bs-btn-active-bg: #fef7f5;
+    --bs-btn-active-border-color: #ef4444;
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: #ef4444;
+    --bs-btn-border-color: #ef4444;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ef4444;
+    --bs-btn-hover-border-color: #ef4444;
+}

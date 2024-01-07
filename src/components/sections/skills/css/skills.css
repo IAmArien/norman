@@ -18,8 +18,8 @@
     background-color: #FFFFFF;
     border-radius: 7px;
     height: 100%;
-    padding: 20px;
-    border: 0px solid #fef7f5;
+    padding: 20px 20px 30px 20px;
+    border: 0px solid #efefef;
 }
 .h3-skills-card-title {
     color: #1C2120;
@@ -36,7 +36,8 @@
     font-size: 11pt;
     cursor: default;
     margin-top: 7px;
-    margin-right: 7px;
+    margin-right: 3px;
+    margin-left: 3px;
     --bs-btn-active-color: #FFFFFF;
     --bs-btn-active-bg: #ef4444;
     --bs-btn-active-border-color: #ef4444;
