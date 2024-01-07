@@ -21,17 +21,23 @@ export const Testimonials =(): React.ReactElement => {
                         <Col lg={6} md={6} sm={12} className="pad-top">
                             <div className="div-testimonials-card">
                                 <p className="p-testimonials-desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Praesent sed ullamcorper urna. Praesent enim tellus, placerat non 
-                                    lectus et, interdum faucibus nulla. Class aptent taciti sociosqu 
-                                    ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                    Nullam volutpat enim ut gravida tincidunt. Morbi vel mollis nisi, non aliquam est.
+                                    One of Norman's standout attributes is his ability to swiftly address and fix bugs. 
+                                    His attention to detail, coupled with a remarkable score of 10/10 in this area, 
+                                    ensures a seamless and bug-free user experience. 
+                                    Furthermore, Norman demonstrates a remarkable capacity to communicate effectively 
+                                    with the product team, facilitating a smooth exchange of ideas and requirements.
+                                    <br/>
+                                    <br/>
+                                    It was a pleasure working alongside Norman, and his contributions significantly 
+                                    elevated the quality of our Android development projects. 
+                                    I highly recommend Norman as a skilled and collaborative Android Developer.
                                 </p>
+                                <Spacer style={{ height: '20px' }} />
                                 <div className="div-testimonials-client">
                                     <Image className="img-testimonials-client-profile" alt={placeholderClientCover1} src={placeholderClientCover1} />
                                     <div className="div-testimonials-client-details">
-                                        <h3 className="h3-client-name">Im Nayeon</h3>
-                                        <p className="p-client-position">Chief Technology Officer (CTO)</p>
+                                        <h3 className="h3-client-name">Joaquin Barandino</h3>
+                                        <p className="p-client-position">Chief Technology Officer (CTO) DSE</p>
                                     </div>
                                     <div className="div-testimonials-client-logo">
                                         <Image className="img-testimonials-client" alt={clientCover1} src={clientCover1} />
@@ -42,17 +48,21 @@ export const Testimonials =(): React.ReactElement => {
                         <Col lg={6} md={6} sm={12} className="pad-top">
                             <div className="div-testimonials-card">
                                 <p className="p-testimonials-desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Praesent sed ullamcorper urna. Praesent enim tellus, placerat non 
-                                    lectus et, interdum faucibus nulla. Class aptent taciti sociosqu 
-                                    ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                    Nullam volutpat enim ut gravida tincidunt. Morbi vel mollis nisi, non aliquam est.
+                                    Norman possesses an exceptional expertise in Android Development, showcasing not only 
+                                    his mastery of the platform but also extending to other technologies such as GCP and Firebase. 
+                                    His general knowledge about how our app can function in its respective category is unparalleled.
+                                    <br/>
+                                    <br/>
+                                    Norman's commitment to excellence is evident in his work. His ability to address bugs promptly 
+                                    and ensure timely feature delivery greatly contributed to the success of our projects. 
+                                    His broad skill set, including expertise in various technologies, makes him a valuable asset to any development team.
                                 </p>
+                                <Spacer style={{ height: '20px' }} />
                                 <div className="div-testimonials-client">
                                     <Image className="img-testimonials-client-profile" alt={placeholderClientCover2} src={placeholderClientCover2} />
                                     <div className="div-testimonials-client-details">
-                                        <h3 className="h3-client-name">Im Nayeon</h3>
-                                        <p className="p-client-position">Senior Technical Project Manager</p>
+                                        <h3 className="h3-client-name">Julpril Santiago</h3>
+                                        <p className="p-client-position">Project Manager S&R Membership Shopping</p>
                                     </div>
                                     <div className="div-testimonials-client-logo">
                                         <Image className="img-testimonials-client" alt={clientCover2} src={clientCover2} />
@@ -63,7 +73,7 @@ export const Testimonials =(): React.ReactElement => {
                     </Row>
                 </div>
             </Container>
-            <Spacer style={{ height: '100px' }} />
+            <Spacer style={{ height: '110px' }} />
         </React.Fragment>
     )
 }
