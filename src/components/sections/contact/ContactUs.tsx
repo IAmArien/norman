@@ -4,7 +4,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import './css/contactus.css';
 import { Spacer } from "../../utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faFacebookMessenger, faGoogle, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faFacebookMessenger, faGoogle, faLinkedin, faWindows } from "@fortawesome/free-brands-svg-icons";
 
 export const ContactUs =(): React.ReactElement => {
     return (
@@ -31,6 +31,7 @@ export const ContactUs =(): React.ReactElement => {
                                         <FontAwesomeIcon className="fa-social-accounts" icon={faFacebookMessenger} />
                                         <FontAwesomeIcon className="fa-social-accounts" icon={faGoogle} />
                                         <FontAwesomeIcon className="fa-social-accounts" icon={faLinkedin} />
+                                        <FontAwesomeIcon className="fa-social-accounts" icon={faWindows}/>
                                     </div>
                                 </div>
                             </Col>
