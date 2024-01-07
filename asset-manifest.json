@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/norman/static/css/main.d9d8e013.css",
+    "main.js": "/norman/static/js/main.d55168c0.js",
+    "static/js/787.238af32f.chunk.js": "/norman/static/js/787.238af32f.chunk.js",
+    "static/media/NormanAboutPhoto.png": "/norman/static/media/NormanAboutPhoto.af8ab76620de0076d506.png",
+    "static/media/tri_booking_cover.png": "/norman/static/media/tri_booking_cover.136b9459e8586d99e13b.png",
+    "static/media/agro_modern_cover.png": "/norman/static/media/agro_modern_cover.54db024c105a5f39beca.png",
+    "static/media/snr_cover_3.png": "/norman/static/media/snr_cover_3.a76922e67b7f954401f5.png",
+    "static/media/snr_cover_1.png": "/norman/static/media/snr_cover_1.b561194716f8762a3def.png",
+    "static/media/snr_cover_2.png": "/norman/static/media/snr_cover_2.055701a2c431c3483821.png",
+    "static/media/skills_cicd_cover.png": "/norman/static/media/skills_cicd_cover.3bcaeb081e10b949c7c5.png",
+    "static/media/pizza_cover_1.png": "/norman/static/media/pizza_cover_1.7e97dcf9da6841952e75.png",
+    "static/media/skills_mobile_cover.png": "/norman/static/media/skills_mobile_cover.adc15a3db4772237f4be.png",
+    "static/media/skills_web_cover.png": "/norman/static/media/skills_web_cover.901e8ae5b75526b97797.png",
+    "static/media/earnest_cover_1.png": "/norman/static/media/earnest_cover_1.c0291471fe69a9ef9a0f.png",
+    "static/media/earnest_cover_3.png": "/norman/static/media/earnest_cover_3.6f472c86e22cc1981e50.png",
+    "static/media/pizza_cover_2.png": "/norman/static/media/pizza_cover_2.e9d931bb7b9583a3d452.png",
+    "static/media/earnest_cover_2.png": "/norman/static/media/earnest_cover_2.bb11629310660c18e1f8.png",
+    "static/media/squadzip_cover_2.png": "/norman/static/media/squadzip_cover_2.17469212062207bfc041.png",
+    "static/media/placeholder_client_cover_1.jpg": "/norman/static/media/placeholder_client_cover_1.3341587afabafb18645b.jpg",
+    "static/media/squadzip_cover_1.png": "/norman/static/media/squadzip_cover_1.86bba46975ebd19ff1ca.png",
+    "static/media/placeholder_client_cover_2.jpg": "/norman/static/media/placeholder_client_cover_2.29a2fef79fe4d40187d5.jpg",
+    "static/media/client_cover_2.png": "/norman/static/media/client_cover_2.5504bea6329e4367723f.png",
+    "static/media/client_cover_1.png": "/norman/static/media/client_cover_1.8b254355a1a6508f2aaa.png",
+    "index.html": "/norman/index.html",
+    "main.d9d8e013.css.map": "/norman/static/css/main.d9d8e013.css.map",
+    "main.d55168c0.js.map": "/norman/static/js/main.d55168c0.js.map",
+    "787.238af32f.chunk.js.map": "/norman/static/js/787.238af32f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9d8e013.css",
+    "static/js/main.d55168c0.js"
+  ]
+}
