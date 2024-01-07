@@ -1,0 +1,85 @@
+.div-footer-wrapper {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #424242;
+}
+.div-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h3-footer-copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11pt;
+    color: #FFFFFF;
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
+}
+.div-footer-contact {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #515050;
+}
+.h3-social-accounts {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13pt;
+    color: #FFFFFF;
+}
+.ul-social-accounts {
+    list-style-type: none;
+    padding-left: 0px !important;
+}
+.a-social-accounts {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11pt;
+    color: #c9c9c9;
+    text-decoration: none;
+}
+.ul-service-accounts {
+    list-style-type: none;
+    padding-left: 0px !important;
+}
+.a-service-accounts {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11pt;
+    color: #c9c9c9;
+    text-decoration: none;
+}
+.a-social-accounts:hover, .a-service-accounts:hover {
+    color: #FFFFFF;
+}
+.div-footer-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.btn-footer {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11pt;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    --bs-btn-active-color: #ef4444;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #ef4444;
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #FFFFFF;
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-hover-bg: #ef4444;
+    --bs-btn-hover-border-color: #ef4444;
+}

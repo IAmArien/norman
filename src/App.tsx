@@ -1,7 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Header, About, WhatIDo, Experience, Projects, Skills, ContactUs, Testimonials } from './components';
+import {
+  Header,
+  About,
+  WhatIDo,
+  Experience,
+  Projects,
+  Skills,
+  ContactUs,
+  Testimonials,
+  Footer
+} from './components';
 
 export const App =(): React.ReactElement => {
   return (
@@ -14,6 +24,7 @@ export const App =(): React.ReactElement => {
       <Skills />
       <Testimonials />
       <ContactUs />
+      <Footer />
     </React.Fragment>
   )
 }

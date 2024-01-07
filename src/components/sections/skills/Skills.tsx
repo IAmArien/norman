@@ -48,7 +48,8 @@ const webSkills = [
     "Firebase Firestore",
     "React Redux",
     "AJAX",
-    "REST APIs"
+    "REST APIs",
+    "Shopify"
 ]
 
 const cicdDevOps = [
