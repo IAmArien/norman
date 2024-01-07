@@ -16,9 +16,9 @@ export const Testimonials =(): React.ReactElement => {
             <Container>
                 <div id="testimonials">
                     <h2 className="h2-testimonials-title">Kind words from excellent <span className="span-highlight">Companies</span> and <span className="span-highlight">Clients</span></h2>
-                    <Spacer style={{ height: '30px' }} />
+                    <Spacer style={{ height: '10px' }} />
                     <Row>
-                        <Col lg={6} md={6} sm={12}>
+                        <Col lg={6} md={6} sm={12} className="pad-top">
                             <div className="div-testimonials-card">
                                 <p className="p-testimonials-desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -39,7 +39,7 @@ export const Testimonials =(): React.ReactElement => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6} md={6} sm={12}>
+                        <Col lg={6} md={6} sm={12} className="pad-top">
                             <div className="div-testimonials-card">
                                 <p className="p-testimonials-desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
