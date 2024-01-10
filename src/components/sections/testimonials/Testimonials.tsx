@@ -33,15 +33,17 @@ export const Testimonials =(): React.ReactElement => {
                                     I highly recommend Norman as a skilled and collaborative Android Developer.
                                 </p>
                                 <Spacer style={{ height: '20px' }} />
-                                <div className="div-testimonials-client">
-                                    <Image className="img-testimonials-client-profile" alt={placeholderClientCover1} src={placeholderClientCover1} />
-                                    <div className="div-testimonials-client-details">
-                                        <h3 className="h3-client-name">Joaquin Barandino</h3>
-                                        <p className="p-client-position">Chief Technology Officer (CTO) DSE</p>
+                                <div className="div-testimonials-client-wrapper">
+                                    <div className="div-testimonials-client">
+                                        <Image className="img-testimonials-client-profile" alt={placeholderClientCover1} src={placeholderClientCover1} />
+                                        <div className="div-testimonials-client-details">
+                                            <h3 className="h3-client-name">Joaquin Barandino</h3>
+                                            <p className="p-client-position">Chief Technology Officer (CTO) DSE</p>
+                                        </div>
+                                        <div className="div-testimonials-client-logo">
+                                            <Image className="img-testimonials-client" alt={clientCover1} src={clientCover1} />
+                                        </div>                                    
                                     </div>
-                                    <div className="div-testimonials-client-logo">
-                                        <Image className="img-testimonials-client" alt={clientCover1} src={clientCover1} />
-                                    </div>                                    
                                 </div>
                             </div>
                         </Col>
@@ -58,15 +60,17 @@ export const Testimonials =(): React.ReactElement => {
                                     His broad skill set, including expertise in various technologies, makes him a valuable asset to any development team.
                                 </p>
                                 <Spacer style={{ height: '20px' }} />
-                                <div className="div-testimonials-client">
-                                    <Image className="img-testimonials-client-profile" alt={placeholderClientCover2} src={placeholderClientCover2} />
-                                    <div className="div-testimonials-client-details">
-                                        <h3 className="h3-client-name">Julpril Santiago</h3>
-                                        <p className="p-client-position">Project Manager S&R Membership Shopping</p>
+                                <div className="div-testimonials-client-wrapper">
+                                    <div className="div-testimonials-client">
+                                        <Image className="img-testimonials-client-profile" alt={placeholderClientCover2} src={placeholderClientCover2} />
+                                        <div className="div-testimonials-client-details">
+                                            <h3 className="h3-client-name">Julpril Santiago</h3>
+                                            <p className="p-client-position">Project Manager S&R Membership Shopping</p>
+                                        </div>
+                                        <div className="div-testimonials-client-logo">
+                                            <Image className="img-testimonials-client" alt={clientCover2} src={clientCover2} />
+                                        </div>                                    
                                     </div>
-                                    <div className="div-testimonials-client-logo">
-                                        <Image className="img-testimonials-client" alt={clientCover2} src={clientCover2} />
-                                    </div>                                    
                                 </div>
                             </div>
                         </Col>

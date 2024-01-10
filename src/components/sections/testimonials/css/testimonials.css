@@ -12,6 +12,8 @@
     height: 100%;
     padding: 35px;
     border: 2px solid #efefef;
+    display: flex;
+    flex-direction: column;
 }
 .p-testimonials-desc {
     font-family: 'Montserrat', sans-serif;
@@ -19,6 +21,12 @@
     font-weight: 500;
     font-size: 12pt;
     color: #6f7684;
+}
+.div-testimonials-client-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .div-testimonials-client {
     display: flex;
