@@ -166,6 +166,7 @@
     font-size: 17pt;
     display: none;
     padding-left: 15px;
+    cursor: pointer;
 }
 
 .img-contact-collapsed-icon {
@@ -176,6 +177,21 @@
 .div-contact-mobile-wrapper {
     display: none;
     padding-right: 15px;
+}
+
+.nav-slider-drawer {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background: #FFFFFF !important;
+    z-index: 9999;
+    overflow-x: hidden;
+    padding-top: 20px;
+    justify-content: left;
+    align-items: start;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 992px) {
@@ -199,4 +215,78 @@
     .div-contact-mobile-wrapper {
         padding-right: 0px;
     }
+}
+
+.slide-open {
+    left: 0px !important;
+    box-shadow: 0 0 10px 5px #CCCCCC !important;
+    transition: .4s;
+}
+
+.slide-close {
+    left: -300px !important;
+    box-shadow: 0 0 0px 0px #CCCCCC !important;
+    transition: .4s;
+}
+
+.nav-brand-logo-slider {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    color: #1C2120;
+    padding-left: 15px;
+}
+
+.div-close-drawer-icon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.fa-close-drawer-icon {
+    font-size: 17pt;
+    color: #1C2120;
+    cursor: pointer;
+}
+
+.nav-slider-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: left;
+    align-items: start;
+}
+
+.nav-slider-item {
+    width: 300px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.nav-slider-menu-item {
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 17px !important;
+    line-height: 140% !important;
+    text-align: left !important;
+    color: #292c33 !important;
+    display: block;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid #e6e4e4 !important;
+}
+
+.nav-slider-menu-item.active {
+    background: #ef4444 !important;
+    color: #FFFFFF !important;
+}
+.nav-slider-menu-item.sub-menu {
+    padding-left: 50px !important;
 }
