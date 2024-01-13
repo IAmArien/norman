@@ -15,6 +15,7 @@ const mobileSkills = [
     "Jetpack Compose",
     "React Native",
     "React Redux",
+    "ReduxJS",
     "TypeScript",
     "Nativewind",
     "Async Storage",
@@ -30,7 +31,7 @@ const mobileSkills = [
     "Google Play Console",
     "Espresso",
     "JUnit",
-    "Jests",
+    "Jest",
     "JaCoCo"
 ]
 
@@ -39,6 +40,7 @@ const webSkills = [
     "Express JS",
     "Node JS",
     "PHP",
+    "Shopify",
     "Sequelize ORM",
     "MySQL",
     "TypeScript",
@@ -52,8 +54,7 @@ const webSkills = [
     "React Redux",
     "Axios",
     "AJAX",
-    "REST APIs",
-    "Shopify"
+    "REST APIs"
 ]
 
 const cicdDevOps = [
@@ -65,7 +66,6 @@ const cicdDevOps = [
     "Microsoft App Center",
     "Git",
     "Virtual Machine Scale Sets",
-    "VMWares",
     "JIRA",
     "Azure Boards",
     "Ubuntu",

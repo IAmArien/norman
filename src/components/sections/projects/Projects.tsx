@@ -138,10 +138,9 @@ export const Projects =(): React.ReactElement => {
                                 <ProjectCoverItem
                                     keyName="snr-shopping"
                                     title="S&R Membership Shopping"
-                                    company="S&R Mobile Apps"
+                                    company="S&R Membership Shopping"
                                     description="
-                                        From the membership shopping chain that brought you the world-class shopping experience, the S&R Shopping app now brings the world right at your doorstep!\n\n
-                                        Download the S&R Shopping mobile app now and enjoy these exciting deals and services! "
+                                        From the membership shopping chain that brought you the world-class shopping experience, the S&R Shopping app now brings the world right at your doorstep!\n"
                                     hasSeeMore
                                     covers={[ snrShoppingCover1, snrShoppingCover2, snrShoppingCover3 ]}
                                 />
@@ -152,7 +151,7 @@ export const Projects =(): React.ReactElement => {
                                 <ProjectCoverItem
                                     keyName="snr-pizza"
                                     title="S&R Pizza"
-                                    company="S&R Mobile Apps"
+                                    company="S&R Membership Shopping"
                                     description="Now’s the time to enjoy your favorite S&R Pizza! Download S&R Pizza app today, and enjoy all the perks of ordering and delivery for FREE, plus receive 20% off for PWD & Senior Citizens! ..."
                                     hasSeeMore
                                     covers={[ pizzaCover1, pizzaCover2 ]}
@@ -162,7 +161,7 @@ export const Projects =(): React.ReactElement => {
                                 <ProjectCoverItem
                                     keyName="tri-booking"
                                     title="Tricycle Booking App"
-                                    company="Personal Project"
+                                    company="Arien DevOps"
                                     description="Tricycle Booking App is a mobile application for booking of tricycles in Pangasinan Province. The application is now in its staging level, but was currently paused due to insufficient funds and supports."
                                     hasSeeMore={false}
                                     covers={[ triBookingCover1 ]}
@@ -172,7 +171,7 @@ export const Projects =(): React.ReactElement => {
                                 <ProjectCoverItem
                                     keyName="agro-modern"
                                     title="Agro Modern"
-                                    company="Personal Project"
+                                    company="Arien DevOps"
                                     description="Agro Modern is a web and mobile-based Application that focuses on addressing multiple problems in the agriculture and government sectors. It is primarily intended to benefit farmers in terms of supply chain and market information."
                                     hasSeeMore={false}
                                     covers={[ agroModernCover1 ]}
