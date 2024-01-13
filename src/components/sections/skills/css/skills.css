@@ -65,3 +65,13 @@
 .div-skills-items {
     text-align: center;
 }
+
+#skills {
+    padding: 0px 25px 0px 25px;
+}
+
+@media only screen and (min-width: 576px) {
+    #skills {
+        padding: 0px 0px 0px 0px;
+    }
+}

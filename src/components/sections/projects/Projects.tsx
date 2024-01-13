@@ -105,7 +105,7 @@ export const Projects =(): React.ReactElement => {
             <Spacer style={{ height: '80px' }} />
             <div className="project-content-wrapper">
                 <Container>
-                    <div id="projects" style={{ paddingTop: '60px' }}>
+                    <div id="projects">
                         <h2 className="h2-projects-title">Latest Projects</h2>
                         <p className="p-projects-desc">Some of the projects I've <span className="span-highlight">developed</span> and I've been <span className="span-highlight">part</span> of.</p>
                         <Row>

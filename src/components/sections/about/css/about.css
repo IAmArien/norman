@@ -30,6 +30,7 @@
 .div-about-button-wrapper {
     display: flex;
     flex-direction: row;
+    padding-bottom: 40px;
 }
 .btn-about {
     border-radius: 5px;
@@ -65,4 +66,38 @@
 .img-about-photo {
     width: 100%;
     height: auto;
+}
+.img-about-photo-responsive {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #00000014;
+    border: 5px solid #ef4444;
+}
+.div-about-details-overlay {
+    padding: 40px 20px 0px 20px;
+}
+.div-about-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.div-about-responsive-mobile {
+    display: flex;
+    flex-direction: column;
+}
+.div-about-responsive-web {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .div-about-responsive-web {
+        display: block;
+    }
+    .div-about-responsive-mobile {
+        display: none;
+    }
 }

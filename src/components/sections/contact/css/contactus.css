@@ -7,7 +7,8 @@
 .div-contact-us-details {
     display: flex;
     flex-direction: column;
-    padding-right: 20px;
+    padding-right: 0px;
+    padding-bottom: 50px;
 }
 .h2-contact-us-title {
     font-family: 'Montserrat', sans-serif;
@@ -59,7 +60,7 @@
 .div-contact-us-fields {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 .input-contact-us {
     font-family: 'Montserrat', sans-serif;
@@ -105,4 +106,24 @@ small {
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #ef4444;
     --bs-btn-hover-border-color: #ef4444;
+}
+
+@media only screen and (min-width: 768px) {
+    .div-contact-us-details {
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+    .div-contact-us-fields {
+        padding-left: 20px;
+    }
+}
+
+#contactUs {
+    padding: 0px 25px 0px 25px;
+}
+
+@media only screen and (min-width: 576px) {
+    #contactUs {
+        padding: 0px;
+    }
 }

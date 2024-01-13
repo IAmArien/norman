@@ -15,6 +15,7 @@
     font-weight: 400;
     font-size: 11pt;
     color: #FFFFFF;
+    text-align: center;
     margin-top: 5px !important;
     margin-bottom: 0px !important;
 }
@@ -82,4 +83,24 @@
     --bs-btn-hover-color: #FFFFFF;
     --bs-btn-hover-bg: #ef4444;
     --bs-btn-hover-border-color: #ef4444;
+}
+
+.div-footer-links-wrapper {
+    padding-bottom: 15px;
+}
+
+#footerLinks {
+    padding: 0px 25px 0px 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .div-footer-links-wrapper {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #footerLinks {
+        padding: 0px;
+    }
 }

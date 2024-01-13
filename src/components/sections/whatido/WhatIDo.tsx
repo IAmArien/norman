@@ -37,7 +37,7 @@ export const WhatIDo =(): React.ReactElement => {
                                 </div>
                                 <h3 className="h3-whatIdo-card-title">Android Applications</h3>
                                 <p className="p-whatIdo-card-desc">
-                                    I develop android applications using JAVA, Kotlin, React Native, XML and Jetpack Compose. Implementing MVVM, MVC, 
+                                    I develop and deploy android applications using JAVA, Kotlin, React Native, XML and Jetpack Compose. Implementing MVVM, MVC, 
                                     Clean Architecture, and SOLID Principles.
                                 </p>
                             </div>
@@ -63,7 +63,7 @@ export const WhatIDo =(): React.ReactElement => {
                                 </div>
                                 <h3 className="h3-whatIdo-card-title">Web Applications</h3>
                                 <p className="p-whatIdo-card-desc">
-                                    I develop web applications for both front-end and back-end using React JS, Express JS, Redux, Redis, Sequelize for ORM, 
+                                    I develop and deploy web applications for both front-end and back-end using React JS, Express JS, React Redux, Sequelize ORM, 
                                     MySQL, and PHP.
                                 </p>
                             </div>
