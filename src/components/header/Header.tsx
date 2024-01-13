@@ -4,13 +4,14 @@ import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import './css/header.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faChevronDown, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const Header =(): React.ReactElement => {
     return (
         <React.Fragment>
             <Navbar expand='lg' fixed='top' className='justify-content-between nav-bg-light nav-header-container'>
                 <Container>
+                    <FontAwesomeIcon icon={faBars} className="img-toggle-icon" />
                     <Navbar.Brand>
                         <Nav.Link href="./" className="nav-brand">NORMAN</Nav.Link>
                     </Navbar.Brand>
@@ -53,6 +54,10 @@ export const Header =(): React.ReactElement => {
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
+                    <div className="div-contact-mobile-wrapper">
+                        <FontAwesomeIcon icon={faPhone} className="img-contact-collapsed-icon" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FontAwesomeIcon icon={faEnvelope} className="img-contact-collapsed-icon" />
+                    </div>
                 </Container>
             </Navbar>
         </React.Fragment>

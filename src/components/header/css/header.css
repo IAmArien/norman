@@ -160,3 +160,43 @@
     background: #ef4444 !important;
     color: #FFFFFF !important;
 }
+
+.img-toggle-icon {
+    color: #1C2120;
+    font-size: 17pt;
+    display: none;
+    padding-left: 15px;
+}
+
+.img-contact-collapsed-icon {
+    color: #ef4444;
+    font-size: 17pt;
+}
+
+.div-contact-mobile-wrapper {
+    display: none;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+    .navbar-brand {
+        display: block;
+        margin: auto;
+        padding-left: 30px;
+    }
+    .img-toggle-icon {
+        display: block;
+    }
+    .div-contact-mobile-wrapper {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .img-toggle-icon {
+        padding-left: 0px;
+    }
+    .div-contact-mobile-wrapper {
+        padding-right: 0px;
+    }
+}
