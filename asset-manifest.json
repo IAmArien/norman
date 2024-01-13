@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/norman/static/css/main.d9d8e013.css",
-    "main.js": "/norman/static/js/main.d55168c0.js",
+    "main.css": "/norman/static/css/main.c8c0443c.css",
+    "main.js": "/norman/static/js/main.3664e1d8.js",
     "static/js/787.238af32f.chunk.js": "/norman/static/js/787.238af32f.chunk.js",
     "static/media/NormanAboutPhoto.png": "/norman/static/media/NormanAboutPhoto.af8ab76620de0076d506.png",
     "static/media/tri_booking_cover.png": "/norman/static/media/tri_booking_cover.136b9459e8586d99e13b.png",
@@ -24,12 +24,12 @@
     "static/media/client_cover_2.png": "/norman/static/media/client_cover_2.5504bea6329e4367723f.png",
     "static/media/client_cover_1.png": "/norman/static/media/client_cover_1.8b254355a1a6508f2aaa.png",
     "index.html": "/norman/index.html",
-    "main.d9d8e013.css.map": "/norman/static/css/main.d9d8e013.css.map",
-    "main.d55168c0.js.map": "/norman/static/js/main.d55168c0.js.map",
+    "main.c8c0443c.css.map": "/norman/static/css/main.c8c0443c.css.map",
+    "main.3664e1d8.js.map": "/norman/static/js/main.3664e1d8.js.map",
     "787.238af32f.chunk.js.map": "/norman/static/js/787.238af32f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9d8e013.css",
-    "static/js/main.d55168c0.js"
+    "static/css/main.c8c0443c.css",
+    "static/js/main.3664e1d8.js"
   ]
 }
