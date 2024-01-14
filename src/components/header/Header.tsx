@@ -33,28 +33,28 @@ export const Header =(): React.ReactElement => {
                     </div>
                     <Nav className="nav-slider-menu">
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item" href="#about">About</Nav.Link>
+                            <Nav.Link id="aboutNav" className="nav-slider-menu-item">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item" href="#whatIdo">What I Do</Nav.Link>
+                            <Nav.Link id="whatIdoNav" className="nav-slider-menu-item">What I Do</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item" href="#experience">Experience</Nav.Link>
+                            <Nav.Link id="experienceNav" className="nav-slider-menu-item">Experience</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item" href="#projects">Projects</Nav.Link>
+                            <Nav.Link id="projectsNav" className="nav-slider-menu-item">Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item" href="#more">More</Nav.Link>
+                            <Nav.Link className="nav-slider-menu-item">More</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item sub-menu" href="#skills">Skills and Technologies</Nav.Link>
+                            <Nav.Link id="skillsNav" className="nav-slider-menu-item sub-menu">Skills and Technologies</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item sub-menu" href="#testimonials">Testimonials</Nav.Link>
+                            <Nav.Link id="testimonialsNav" className="nav-slider-menu-item sub-menu">Testimonials</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link className="nav-slider-menu-item sub-menu" href="#contactus">Contact Us</Nav.Link>
+                            <Nav.Link id="contactUsNav" className="nav-slider-menu-item sub-menu">Contact Us</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
                             <Button variant="primary" size="lg" className="nav-btn nav-btn-download responsive" onClick={() => onDownloadCVClick('cv')}>Download CV</Button>
@@ -73,32 +73,32 @@ export const Header =(): React.ReactElement => {
                     <Navbar.Collapse>
                         <Nav className="nav-menu-items">
                             <Nav.Item>
-                                <Nav.Link id="aboutNav" className="auto-padder" href="#about"><span id="about" className="nav-span active">About</span></Nav.Link>
+                                <Nav.Link id="aboutNav" className="auto-padder"><span id="about" className="nav-span active">About</span></Nav.Link>
                                 <div className='nav-hover active'></div>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id="whatIdoNav" className="auto-padder" href="#whatIdo"><span id="whatIdo" className="nav-span">What I do</span></Nav.Link>
+                                <Nav.Link id="whatIdoNav" className="auto-padder"><span id="whatIdo" className="nav-span">What I do</span></Nav.Link>
                                 <div className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id="experienceNav" className="auto-padder" href="#experience"><span id="experience" className="nav-span">Experience</span></Nav.Link>
+                                <Nav.Link id="experienceNav" className="auto-padder"><span id="experience" className="nav-span">Experience</span></Nav.Link>
                                 <div className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id="projectsNav" className="auto-padder" href="#projects"><span id="projects" className="nav-span">Projects</span></Nav.Link>
+                                <Nav.Link id="projectsNav" className="auto-padder"><span id="projects" className="nav-span">Projects</span></Nav.Link>
                                 <div className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id="moreNav" className="auto-padder" href="#more">
+                                <Nav.Link id="moreNav" className="auto-padder">
                                     <span id="more" className="nav-span">More</span>&nbsp;&nbsp;&nbsp;
                                     <span id="moreDropdown" className="nav-span">
                                         <FontAwesomeIcon icon={faChevronDown} />
                                     </span>
                                     <div className='div-more-extra-menu'>
                                         <Nav.Item className='nav-more-items' id='nav-more'>
-                                            <Nav.Link className='nav-more-item' href='#skills'>Skills and Technologies</Nav.Link>
-                                            <Nav.Link className='nav-more-item' href='#testimonials'>Testimonials</Nav.Link>
-                                            <Nav.Link className='nav-more-item' href='#contact'>Contact Us</Nav.Link>
+                                            <Nav.Link id="skillsNav" className='nav-more-item'>Skills and Technologies</Nav.Link>
+                                            <Nav.Link id="testimonialsNav" className='nav-more-item'>Testimonials</Nav.Link>
+                                            <Nav.Link id="contactUsNav" className='nav-more-item'>Contact Us</Nav.Link>
                                         </Nav.Item>
                                     </div>
                                 </Nav.Link>

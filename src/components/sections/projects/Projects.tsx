@@ -105,7 +105,7 @@ export const Projects =(): React.ReactElement => {
     return (
         <React.Fragment>
             <Spacer style={{ height: '80px' }} />
-            <div className="project-content-wrapper">
+            <div id="projectsContainer" className="project-content-wrapper">
                 <Container>
                     <div id="projects">
                         <h2 className="h2-projects-title">Latest Projects</h2>

@@ -10,7 +10,7 @@ import NormanAboutPhoto from '../../../assets/images/NormanAboutPhoto.png';
 export const About =(): React.ReactElement => {
     return (
         <React.Fragment>
-            <div className="about-content-wrapper">
+            <div id="aboutContainer" className="about-content-wrapper">
                 <Spacer style={{ height: '100px' }} />
                 <Container>
                     <div className="div-about-responsive-web">

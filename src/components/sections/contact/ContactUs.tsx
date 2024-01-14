@@ -9,7 +9,7 @@ import { faFacebook, faFacebookMessenger, faGoogle, faLinkedin, faWindows } from
 export const ContactUs =(): React.ReactElement => {
     return (
         <React.Fragment>
-            <div className="div-contact-us-wrapper">
+            <div id="contactUsContainer" className="div-contact-us-wrapper">
                 <Spacer style={{ height: '40px' }} />
                 <Container>
                     <div id="contactUs">

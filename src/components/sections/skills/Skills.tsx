@@ -78,7 +78,7 @@ const cicdDevOps = [
 export const Skills =(): React.ReactElement => {
     return (
         <React.Fragment>
-            <div className="skills-content-wrapper">
+            <div id="skillsContainer" className="skills-content-wrapper">
                 <Spacer style={{ height: '60px' }} />
                 <Container>
                     <div id="skills">
