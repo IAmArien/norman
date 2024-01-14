@@ -14,6 +14,7 @@ import {
 } from './components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CVDownload } from './components/cvdownload/CVDownload';
+import { HireForm } from './components/hireform/HireForm';
 
 const MainLayout =(): React.ReactElement => {
   return (
@@ -38,6 +39,7 @@ export const App =(): React.ReactElement => {
         <Routes>
           <Route path='/norman' index element={<MainLayout />} />
           <Route path='/norman/cv' element={<CVDownload />} />
+          <Route path='/norman/hire' element={<HireForm />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

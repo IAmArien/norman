@@ -3,7 +3,7 @@ import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
 import './css/about.css';
 
-import { Spacer } from '../../';
+import { HireType, Spacer, onHireMeClick } from '../../';
 
 import NormanAboutPhoto from '../../../assets/images/NormanAboutPhoto.png';
 
@@ -25,7 +25,7 @@ export const About =(): React.ReactElement => {
                                 </p>
                                 <Spacer style={{ height: '65px' }} />
                                 <div className="div-about-button-wrapper">
-                                    <Button variant="primary" size="lg" className="btn-about btn-hire-me">Hire Me</Button>
+                                    <Button variant="primary" size="lg" className="btn-about btn-hire-me" onClick={() => onHireMeClick(HireType.General)}>Hire Me</Button>
                                     <Spacer style={{ width: '15px' }} />
                                     <Button variant="outline-primary" size="lg" className="btn-about btn-download-cv" onClick={() => onDownloadCVClick()}>Download CV</Button>
                                 </div>
@@ -48,7 +48,7 @@ export const About =(): React.ReactElement => {
                             </div>
                             <Spacer style={{ height: '35px' }} />
                             <div className="div-about-button-wrapper" style={{ justifyContent: 'center' }}>
-                                <Button variant="primary" size="lg" className="btn-about btn-hire-me">Hire Me</Button>
+                                <Button variant="primary" size="lg" className="btn-about btn-hire-me" onClick={() => onHireMeClick(HireType.General)}>Hire Me</Button>
                                 <Spacer style={{ width: '15px' }} />
                                 <Button variant="outline-primary" size="lg" className="btn-about btn-download-cv" onClick={() => onDownloadCVClick()}>Download CV</Button>
                             </div>
