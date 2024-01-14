@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/norman/static/css/main.0c43b4d9.css",
-    "main.js": "/norman/static/js/main.3664e1d8.js",
+    "main.css": "/norman/static/css/main.509e2e93.css",
+    "main.js": "/norman/static/js/main.0c499a55.js",
     "static/js/787.238af32f.chunk.js": "/norman/static/js/787.238af32f.chunk.js",
     "static/media/NormanAboutPhoto.png": "/norman/static/media/NormanAboutPhoto.af8ab76620de0076d506.png",
     "static/media/tri_booking_cover.png": "/norman/static/media/tri_booking_cover.136b9459e8586d99e13b.png",
@@ -21,15 +21,16 @@
     "static/media/placeholder_client_cover_1.jpg": "/norman/static/media/placeholder_client_cover_1.3341587afabafb18645b.jpg",
     "static/media/squadzip_cover_1.png": "/norman/static/media/squadzip_cover_1.86bba46975ebd19ff1ca.png",
     "static/media/placeholder_client_cover_2.jpg": "/norman/static/media/placeholder_client_cover_2.29a2fef79fe4d40187d5.jpg",
+    "static/media/norman_cv.pdf": "/norman/static/media/norman_cv.1e065f3a80ec7e337021.pdf",
     "static/media/client_cover_2.png": "/norman/static/media/client_cover_2.5504bea6329e4367723f.png",
     "static/media/client_cover_1.png": "/norman/static/media/client_cover_1.8b254355a1a6508f2aaa.png",
     "index.html": "/norman/index.html",
-    "main.0c43b4d9.css.map": "/norman/static/css/main.0c43b4d9.css.map",
-    "main.3664e1d8.js.map": "/norman/static/js/main.3664e1d8.js.map",
+    "main.509e2e93.css.map": "/norman/static/css/main.509e2e93.css.map",
+    "main.0c499a55.js.map": "/norman/static/js/main.0c499a55.js.map",
     "787.238af32f.chunk.js.map": "/norman/static/js/787.238af32f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c43b4d9.css",
-    "static/js/main.3664e1d8.js"
+    "static/css/main.509e2e93.css",
+    "static/js/main.0c499a55.js"
   ]
 }
