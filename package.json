@@ -1,7 +1,7 @@
 {
   "name": "norman",
   "version": "0.1.0",
-  "homepage": "https://iamarien.github.io/#norman",
+  "homepage": "https://iamarien.github.io/norman",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
