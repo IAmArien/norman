@@ -23,7 +23,6 @@ export const WhatIDo =(): React.ReactElement => {
                             <Col lg={4} md={6} sm={12} className="pad-top-wid">
                                 <div className="div-whatIdo-card">
                                     <div className="div-whatIdo-icon-container">
-                                        
                                         <div className="div-whatIdo-icon-box">
                                             <FontAwesomeIcon icon={faAndroid} className="fa-whatIdo-icon" />
                                         </div>
