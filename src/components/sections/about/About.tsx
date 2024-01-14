@@ -8,7 +8,7 @@ import { HireType, Spacer, onHireMeClick } from '../../';
 import NormanAboutPhoto from '../../../assets/images/NormanAboutPhoto.png';
 
 export const About =(): React.ReactElement => {
-    const onDownloadCVClick =() => { window.location.href = '/norman/cv'; }
+    const onDownloadCVClick =() => { window.location.href = '/#norman/cv'; }
     return (
         <React.Fragment>
             <div className="about-content-wrapper">

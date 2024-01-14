@@ -12,11 +12,11 @@ import {
   Testimonials,
   Footer
 } from './components';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import { CVDownload } from './components/cvdownload/CVDownload';
 import { HireForm } from './components/hireform/HireForm';
 
-const MainLayout =(): React.ReactElement => {
+export const MainLayout =(): React.ReactElement => {
   return (
     <React.Fragment>
       <Header />
@@ -35,13 +35,14 @@ const MainLayout =(): React.ReactElement => {
 export const App =(): React.ReactElement => {
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
+          <Route path='/' index element={<MainLayout />} />
           <Route path='/norman' index element={<MainLayout />} />
           <Route path='/norman/cv' element={<CVDownload />} />
           <Route path='/norman/hire' element={<HireForm />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </React.Fragment>
   )
 }
