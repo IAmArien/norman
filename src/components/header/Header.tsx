@@ -5,7 +5,7 @@ import './css/header.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faChevronDown, faEnvelope, faPhone, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Spacer, onDownloadCVClick } from "../utils";
+import { SocialAccount, Spacer, onDownloadCVClick, onSocialAccountClick } from "../utils";
 
 export const Header =(): React.ReactElement => {
     const onDrawerMenuClick =(isOpen: boolean) => {
@@ -110,8 +110,8 @@ export const Header =(): React.ReactElement => {
                         </Nav>
                     </Navbar.Collapse>
                     <div className="div-contact-mobile-wrapper">
-                        <FontAwesomeIcon icon={faPhone} className="img-contact-collapsed-icon" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <FontAwesomeIcon icon={faEnvelope} className="img-contact-collapsed-icon" />
+                        <FontAwesomeIcon icon={faPhone} className="img-contact-collapsed-icon" onClick={() => onSocialAccountClick(SocialAccount.SMS)} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FontAwesomeIcon icon={faEnvelope} className="img-contact-collapsed-icon" onClick={() => onSocialAccountClick(SocialAccount.Google)} />
                     </div>
                 </Container>
             </Navbar>

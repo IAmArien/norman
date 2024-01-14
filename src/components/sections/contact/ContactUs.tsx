@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
 import './css/contactus.css';
-import { Spacer } from "../../utils";
+import { SocialAccount, Spacer, onSocialAccountClick } from "../../utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faFacebookMessenger, faGoogle, faLinkedin, faWindows } from "@fortawesome/free-brands-svg-icons";
 
@@ -27,11 +27,11 @@ export const ContactUs =(): React.ReactElement => {
                                     <Spacer style={{ height: '40px' }} />
                                     <h4 className="h4-social">Social:</h4>
                                     <div className="div-social-accounts">
-                                        <FontAwesomeIcon className="fa-social-accounts" icon={faFacebook} />
-                                        <FontAwesomeIcon className="fa-social-accounts" icon={faFacebookMessenger} />
-                                        <FontAwesomeIcon className="fa-social-accounts" icon={faGoogle} />
-                                        <FontAwesomeIcon className="fa-social-accounts" icon={faLinkedin} />
-                                        <FontAwesomeIcon className="fa-social-accounts" icon={faWindows}/>
+                                        <FontAwesomeIcon className="fa-social-accounts" icon={faFacebook} onClick={() => onSocialAccountClick(SocialAccount.Facebook)} />
+                                        <FontAwesomeIcon className="fa-social-accounts" icon={faFacebookMessenger} onClick={() => onSocialAccountClick(SocialAccount.Messenger)} />
+                                        <FontAwesomeIcon className="fa-social-accounts" icon={faGoogle} onClick={() => onSocialAccountClick(SocialAccount.Google)} />
+                                        <FontAwesomeIcon className="fa-social-accounts" icon={faLinkedin} onClick={() => onSocialAccountClick(SocialAccount.LinkedIn)} />
+                                        <FontAwesomeIcon className="fa-social-accounts" icon={faWindows} onClick={() => onSocialAccountClick(SocialAccount.Outlook)}/>
                                     </div>
                                 </div>
                             </Col>

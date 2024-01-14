@@ -43,6 +43,7 @@
     font-size: 11pt;
     color: #c9c9c9;
     text-decoration: none;
+    cursor: pointer;
 }
 .ul-service-accounts {
     list-style-type: none;
@@ -55,6 +56,7 @@
     font-size: 11pt;
     color: #c9c9c9;
     text-decoration: none;
+    cursor: pointer;
 }
 .a-social-accounts:hover, .a-service-accounts:hover {
     color: #FFFFFF;

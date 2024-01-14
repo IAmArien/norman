@@ -2,7 +2,7 @@ import React from "react";
 
 import './css/footer.css';
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { HireType, Spacer, onDownloadCVClick, onHireMeClick } from "../../utils";
+import { HireType, SocialAccount, Spacer, onDownloadCVClick, onHireMeClick, onSocialAccountClick } from "../../utils";
 
 export const Footer =(): React.ReactElement => {
     return (
@@ -16,11 +16,11 @@ export const Footer =(): React.ReactElement => {
                                 <div className="div-footer-links-wrapper">
                                     <h3 className="h3-social-accounts">Social Accounts</h3>
                                     <ul className="ul-social-accounts">
-                                        <li><a className="a-social-accounts" href="#" target="_blank">Facebook</a></li>
-                                        <li><a className="a-social-accounts" href="#" target="_blank">Messenger</a></li>
-                                        <li><a className="a-social-accounts" href="#" target="_blank">Gmail</a></li>
-                                        <li><a className="a-social-accounts" href="#" target="_blank">LinkedIn</a></li>
-                                        <li><a className="a-social-accounts" href="#" target="_blank">Outlook</a></li>
+                                        <li><a className="a-social-accounts" onClick={() => onSocialAccountClick(SocialAccount.Facebook)}>Facebook</a></li>
+                                        <li><a className="a-social-accounts" onClick={() => onSocialAccountClick(SocialAccount.Messenger)}>Messenger</a></li>
+                                        <li><a className="a-social-accounts" onClick={() => onSocialAccountClick(SocialAccount.Google)}>Gmail</a></li>
+                                        <li><a className="a-social-accounts" onClick={() => onSocialAccountClick(SocialAccount.LinkedIn)}>LinkedIn</a></li>
+                                        <li><a className="a-social-accounts" onClick={() => onSocialAccountClick(SocialAccount.Outlook)}>Outlook</a></li>
                                     </ul>
                                 </div>
                             </Col>
@@ -28,11 +28,11 @@ export const Footer =(): React.ReactElement => {
                                 <div className="div-footer-links-wrapper">
                                     <h3 className="h3-social-accounts">Services</h3>
                                     <ul className="ul-service-accounts">
-                                        <li><a className="a-service-accounts" href="#">Android / Web App Development</a></li>
-                                        <li><a className="a-service-accounts" href="#">Consulting</a></li>
-                                        <li><a className="a-service-accounts" href="#">Freelancing / Part Time</a></li>
-                                        <li><a className="a-service-accounts" href="#">Contract-based</a></li>
-                                        <li><a className="a-service-accounts" href="#">Tech Talk</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Android)}>Android / Web App Development</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Consulting)}>Consulting</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Freelancing)}>Freelancing / Part Time</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Contract)}>Contract-based</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.TechTalk)}>Tech Talk</a></li>
                                     </ul>
                                 </div>
                             </Col>
@@ -54,7 +54,7 @@ export const Footer =(): React.ReactElement => {
                                 <div className="div-footer-buttons">
                                     <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onDownloadCVClick('cv')}>Download CV</Button>
                                     <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onHireMeClick(HireType.General)}>Hire Me</Button>
-                                    <Button variant="outline-primary" size="lg" className="btn-footer">Consulting</Button>
+                                    <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onHireMeClick(HireType.Consulting)}>Consulting</Button>
                                 </div>
                             </Col>
                         </Row>
