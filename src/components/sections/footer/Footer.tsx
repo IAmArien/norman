@@ -5,6 +5,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Spacer } from "../../utils";
 
 export const Footer =(): React.ReactElement => {
+    const onDownloadCVClick =() => { window.location.href = '/norman/cv'; }
     return (
         <React.Fragment>
             <div className="div-footer-contact">
@@ -52,7 +53,7 @@ export const Footer =(): React.ReactElement => {
                             </Col>
                             <Col lg={3} md={3} sm={12}>
                                 <div className="div-footer-buttons">
-                                    <Button variant="outline-primary" size="lg" className="btn-footer">Download CV</Button>
+                                    <Button variant="outline-primary" size="lg" className="btn-footer" onClick={onDownloadCVClick}>Download CV</Button>
                                     <Button variant="outline-primary" size="lg" className="btn-footer">Hire Me</Button>
                                     <Button variant="outline-primary" size="lg" className="btn-footer">Consulting</Button>
                                 </div>

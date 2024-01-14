@@ -1,0 +1,55 @@
+.div-pdf-container-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.div-pdf-controls-wrapper {
+    width: 100%;
+    background-color: #1C2120;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.div-pdf-viewer {
+    padding-top: 10px;
+}
+.div-pdf-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pdf-download-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.div-pdf-btn-controls-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.pdf-download-btn {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11pt;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.pdf-download-btn-download {
+    --bs-btn-active-color: #ef4444;
+    --bs-btn-active-bg: #fef7f5;
+    --bs-btn-active-border-color: #ef4444;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ef4444;
+    --bs-btn-border-color: #ef4444;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ef4444;
+    --bs-btn-hover-border-color: #fff;
+}

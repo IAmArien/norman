@@ -12,8 +12,10 @@ import {
   Testimonials,
   Footer
 } from './components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { CVDownload } from './components/cvdownload/CVDownload';
 
-export const App =(): React.ReactElement => {
+const MainLayout =(): React.ReactElement => {
   return (
     <React.Fragment>
       <Header />
@@ -25,6 +27,19 @@ export const App =(): React.ReactElement => {
       <Testimonials />
       <ContactUs />
       <Footer />
+    </React.Fragment>
+  )
+}
+
+export const App =(): React.ReactElement => {
+  return (
+    <React.Fragment>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/norman' index element={<MainLayout />} />
+          <Route path='/norman/cv' element={<CVDownload />} />
+        </Routes>
+      </BrowserRouter>
     </React.Fragment>
   )
 }

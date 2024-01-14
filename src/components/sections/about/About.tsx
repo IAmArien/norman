@@ -8,6 +8,7 @@ import { Spacer } from '../../';
 import NormanAboutPhoto from '../../../assets/images/NormanAboutPhoto.png';
 
 export const About =(): React.ReactElement => {
+    const onDownloadCVClick =() => { window.location.href = '/norman/cv'; }
     return (
         <React.Fragment>
             <div className="about-content-wrapper">
@@ -26,7 +27,7 @@ export const About =(): React.ReactElement => {
                                 <div className="div-about-button-wrapper">
                                     <Button variant="primary" size="lg" className="btn-about btn-hire-me">Hire Me</Button>
                                     <Spacer style={{ width: '15px' }} />
-                                    <Button variant="outline-primary" size="lg" className="btn-about btn-download-cv">Download CV</Button>
+                                    <Button variant="outline-primary" size="lg" className="btn-about btn-download-cv" onClick={() => onDownloadCVClick()}>Download CV</Button>
                                 </div>
                             </Col>
                             <Col lg={5} md={6} sm={0}>
@@ -49,7 +50,7 @@ export const About =(): React.ReactElement => {
                             <div className="div-about-button-wrapper" style={{ justifyContent: 'center' }}>
                                 <Button variant="primary" size="lg" className="btn-about btn-hire-me">Hire Me</Button>
                                 <Spacer style={{ width: '15px' }} />
-                                <Button variant="outline-primary" size="lg" className="btn-about btn-download-cv">Download CV</Button>
+                                <Button variant="outline-primary" size="lg" className="btn-about btn-download-cv" onClick={() => onDownloadCVClick()}>Download CV</Button>
                             </div>
                         </div>
                     </div>

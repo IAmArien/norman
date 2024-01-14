@@ -110,6 +110,22 @@
     --bs-btn-hover-bg: #ef4444;
     --bs-btn-hover-border-color: #ef4444;
 }
+.nav-btn-download.responsive {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 600;
+    --bs-btn-active-color: #ef4444;
+    --bs-btn-active-bg: #fef7f5;
+    --bs-btn-active-border-color: #ef4444;
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: #ef4444;
+    --bs-btn-border-color: #ef4444;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ef4444;
+    --bs-btn-hover-border-color: #ef4444;
+}
 .nav-btn-download-light {
     --bs-btn-active-color: #FFFFFF !important;
     --bs-btn-active-bg: #ef4444 !important;

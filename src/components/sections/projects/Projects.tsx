@@ -27,11 +27,12 @@ type ProjectCoverItemProps = {
     description: string,
     hasSeeMore: boolean,
     covers: string[],
-    keyName: string
+    keyName: string,
+    link?: string | null
 }
 
 const ProjectCoverItem: React.FC<ProjectCoverItemProps> =(props): React.ReactElement => {
-    const { title, company, description, hasSeeMore, covers, keyName } = props;
+    const { title, company, description, hasSeeMore, covers, keyName, link } = props;
     const [selectedCover, setSelectedCover] = React.useState(covers[0]);
     const onSelectProjectCover =(cover: string, index: number): void => {
         const imageCovers = document.getElementsByClassName(keyName);
@@ -46,6 +47,7 @@ const ProjectCoverItem: React.FC<ProjectCoverItemProps> =(props): React.ReactEle
         imageCovers[index].classList.add("project-cover-selected");
         setSelectedCover(cover);
     }
+    const onSeeMoreClick =(link: string) => { window.location.href = link; }
     const descriptions = description.split("\\n");
     return (
         <React.Fragment>
@@ -89,7 +91,7 @@ const ProjectCoverItem: React.FC<ProjectCoverItemProps> =(props): React.ReactEle
                                     </React.Fragment>
                                 )  
                             }) } { hasSeeMore ? (
-                                <span className="span-highlight" style={{ cursor: 'pointer' }}>See More.</span>
+                                <span className="span-highlight" style={{ cursor: 'pointer' }} onClick={() => onSeeMoreClick(link!)}>See More.</span>
                             ) : <></> }
                         </p>
                     </div>
@@ -119,6 +121,7 @@ export const Projects =(): React.ReactElement => {
                                         With Earnest, you can learn investing basics and stay updated with relevant news to power your decisions ... "
                                     hasSeeMore
                                     covers={[ earnestProjectCover1, earnestProjectCover2, earnestProjectCover3 ]}
+                                    link="https://play.google.com/store/apps/details?id=ph.mbtc.platform11.earnest&hl=en&gl=US"
                                 />
                             </Col>
                             <Col lg={4} md={12} sm={12}>
@@ -132,6 +135,7 @@ export const Projects =(): React.ReactElement => {
                                         to the workplace ... "
                                     hasSeeMore
                                     covers={[ squadzipCover1, squadzipCover2 ]}
+                                    link="https://play.google.com/store/apps/details?id=com.digitalspaceexplorer.squadzip&hl=en&gl=US"
                                 />
                             </Col>
                             <Col lg={4} md={12} sm={12}>
@@ -143,6 +147,7 @@ export const Projects =(): React.ReactElement => {
                                         From the membership shopping chain that brought you the world-class shopping experience, the S&R Shopping app now brings the world right at your doorstep!\n"
                                     hasSeeMore
                                     covers={[ snrShoppingCover1, snrShoppingCover2, snrShoppingCover3 ]}
+                                    link="https://play.google.com/store/apps/details?id=com.snr.shopping&hl=en_US"
                                 />
                             </Col>
                         </Row>
@@ -155,6 +160,7 @@ export const Projects =(): React.ReactElement => {
                                     description="Now’s the time to enjoy your favorite S&R Pizza! Download S&R Pizza app today, and enjoy all the perks of ordering and delivery for FREE, plus receive 20% off for PWD & Senior Citizens! ..."
                                     hasSeeMore
                                     covers={[ pizzaCover1, pizzaCover2 ]}
+                                    link="https://play.google.com/store/apps/details?id=com.snr.pizza&hl=en_US"
                                 />
                             </Col>
                             <Col lg={4} md={12} sm={12}>

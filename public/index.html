@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ef4444" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -100,15 +100,20 @@
 
         window.onscroll = () => {
           const scrollTop = document.documentElement.scrollTop;
-          const navbarContainer = document.getElementsByClassName("nav-header-container")[0];
-          // setNavbarMenuSelectedScrollingEffect(scrollTop);
-          // setNavbarBrandScrollingEffect(scrollTop);
-          // setNavbarMenusScrollingEffect(scrollTop);
-          // setNavbarMenuButtonScrollingEffect(scrollTop);
-          if (scrollTop >= 100) {
-            navbarContainer.classList.add("navbar-shadow-shrink");
-          } else {
-            navbarContainer.classList.remove("navbar-shadow-shrink");
+          const navHeaderContainer = document.getElementsByClassName("nav-header-container");
+          if (navHeaderContainer !== undefined || navHeaderContainer !== null) {
+            if (navHeaderContainer.length > 0) {
+              const navbarContainer = navHeaderContainer[0];
+              // setNavbarMenuSelectedScrollingEffect(scrollTop);
+              // setNavbarBrandScrollingEffect(scrollTop);
+              // setNavbarMenusScrollingEffect(scrollTop);
+              // setNavbarMenuButtonScrollingEffect(scrollTop);
+              if (scrollTop >= 100) {
+                navbarContainer.classList.add("navbar-shadow-shrink");
+              } else {
+                navbarContainer.classList.remove("navbar-shadow-shrink");
+              }
+            }
           }
         }
       }
