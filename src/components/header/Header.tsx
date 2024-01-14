@@ -5,7 +5,7 @@ import './css/header.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faChevronDown, faEnvelope, faPhone, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Spacer } from "../utils";
+import { Spacer, onDownloadCVClick } from "../utils";
 
 export const Header =(): React.ReactElement => {
     const onDrawerMenuClick =(isOpen: boolean) => {
@@ -18,7 +18,6 @@ export const Header =(): React.ReactElement => {
             navSliderDrawer.classList.add('slide-close');
         }
     }
-    const onDownloadCVClick =() => { window.location.href = '/norman/cv'; }
     return (
         <React.Fragment>
             <Navbar expand='lg' fixed='top' className='justify-content-between nav-bg-light nav-header-container'>
@@ -58,7 +57,7 @@ export const Header =(): React.ReactElement => {
                             <Nav.Link className="nav-slider-menu-item sub-menu" href="#contactus">Contact Us</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Button variant="primary" size="lg" className="nav-btn nav-btn-download responsive" onClick={() => onDownloadCVClick()}>Download CV</Button>
+                            <Button variant="primary" size="lg" className="nav-btn nav-btn-download responsive" onClick={() => onDownloadCVClick('cv')}>Download CV</Button>
                         </Nav.Item>
                     </Nav>
                 </div>
@@ -69,7 +68,7 @@ export const Header =(): React.ReactElement => {
                         onClick={() => onDrawerMenuClick(true)}
                     />
                     <Navbar.Brand>
-                        <Nav.Link href="./norman" className="nav-brand">NORMAN</Nav.Link>
+                        <Nav.Link href="/norman" className="nav-brand">NORMAN</Nav.Link>
                     </Navbar.Brand>
                     <Navbar.Collapse>
                         <Nav className="nav-menu-items">
@@ -106,7 +105,7 @@ export const Header =(): React.ReactElement => {
                                 <div className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
-                                <Button variant="primary" size="sm" className="nav-btn nav-btn-download" onClick={() => onDownloadCVClick()}>Download</Button>
+                                <Button variant="primary" size="sm" className="nav-btn nav-btn-download" onClick={() => onDownloadCVClick('cv')}>Download</Button>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

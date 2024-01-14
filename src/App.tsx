@@ -10,9 +10,10 @@ import {
   Skills,
   ContactUs,
   Testimonials,
-  Footer
+  Footer,
+  getSerializedPath
 } from './components';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { CVDownload } from './components/cvdownload/CVDownload';
 import { HireForm } from './components/hireform/HireForm';
 
@@ -39,8 +40,8 @@ export const App =(): React.ReactElement => {
         <Routes>
           <Route path='/' index element={<MainLayout />} />
           <Route path='/norman' index element={<MainLayout />} />
-          <Route path='/norman/cv' element={<CVDownload />} />
-          <Route path='/norman/hire' element={<HireForm />} />
+          <Route path={getSerializedPath('cv')} element={<CVDownload />} />
+          <Route path={getSerializedPath('hire')} element={<HireForm />} />
         </Routes>
       </HashRouter>
     </React.Fragment>

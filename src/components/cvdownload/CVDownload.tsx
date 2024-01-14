@@ -17,7 +17,7 @@ export const CVDownload =(): React.ReactElement => {
                 <div className="div-pdf-controls-wrapper">
                     <Container>
                         <div className="div-pdf-controls">
-                            <a href="/#norman" className="pdf-download-title">NORMAN</a>
+                            <a href="/norman" className="pdf-download-title">NORMAN</a>
                             <div className="div-pdf-btn-controls-wrapper">
                                 <Button variant="outline-primary" size="sm" className="pdf-download-btn pdf-download-btn-download" onClick={() => onDownloadCVClick()}>
                                     <FontAwesomeIcon icon={faCloudDownloadAlt} />
