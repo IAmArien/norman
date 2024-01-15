@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/norman/static/css/main.aa97a649.css",
-    "main.js": "/norman/static/js/main.3d9e9731.js",
+    "main.js": "/norman/static/js/main.b5a03a2b.js",
     "static/js/787.238af32f.chunk.js": "/norman/static/js/787.238af32f.chunk.js",
     "static/media/NormanAboutPhoto.png": "/norman/static/media/NormanAboutPhoto.af8ab76620de0076d506.png",
     "static/media/tri_booking_cover.png": "/norman/static/media/tri_booking_cover.136b9459e8586d99e13b.png",
@@ -26,11 +26,11 @@
     "static/media/client_cover_1.png": "/norman/static/media/client_cover_1.8b254355a1a6508f2aaa.png",
     "index.html": "/norman/index.html",
     "main.aa97a649.css.map": "/norman/static/css/main.aa97a649.css.map",
-    "main.3d9e9731.js.map": "/norman/static/js/main.3d9e9731.js.map",
+    "main.b5a03a2b.js.map": "/norman/static/js/main.b5a03a2b.js.map",
     "787.238af32f.chunk.js.map": "/norman/static/js/787.238af32f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa97a649.css",
-    "static/js/main.3d9e9731.js"
+    "static/js/main.b5a03a2b.js"
   ]
 }
