@@ -6,8 +6,20 @@ $(document).ready(() => {
         scrollTop: $("#aboutContainer").offset().top - 40
         }, 100);
     });
+    $("#aboutSlideNav").click(() => {
+        console.log("Hello World, I was clicked");
+        $('html, body').animate({
+        scrollTop: $("#aboutContainer").offset().top - 40
+        }, 100);
+    });
     // what I do
     $("#whatIdoNav").click(() => {
+        console.log("Hello World, I was clicked");
+        $('html, body').animate({
+        scrollTop: $("#whatIdoContainer").offset().top - 40
+        }, 100);
+    });
+    $("#whatIdoSlideNav").click(() => {
         console.log("Hello World, I was clicked");
         $('html, body').animate({
         scrollTop: $("#whatIdoContainer").offset().top - 40
@@ -20,8 +32,20 @@ $(document).ready(() => {
         scrollTop: $("#experienceContainer").offset().top - 80
         }, 100);
     });
+    $("#experienceSlideNav").click(() => {
+        console.log("Hello World, I was clicked");
+        $('html, body').animate({
+        scrollTop: $("#experienceContainer").offset().top - 80
+        }, 100);
+    });
     // projects
     $("#projectsNav").click(() => {
+        console.log("Hello World, I was clicked");
+        $('html, body').animate({
+        scrollTop: $("#projectsContainer").offset().top - 30
+        }, 100);
+    });
+    $("#projectsSlideNav").click(() => {
         console.log("Hello World, I was clicked");
         $('html, body').animate({
         scrollTop: $("#projectsContainer").offset().top - 30
@@ -34,6 +58,12 @@ $(document).ready(() => {
         scrollTop: $("#skillsContainer").offset().top - 30
         }, 100);
     });
+    $("#skillsSlideNav").click(() => {
+        console.log("Hello World, I was clicked");
+        $('html, body').animate({
+        scrollTop: $("#skillsContainer").offset().top - 30
+        }, 100);
+    });
     // testimonials
     $("#testimonialsNav").click(() => {
         console.log("Hello World, I was clicked");
@@ -41,8 +71,20 @@ $(document).ready(() => {
         scrollTop: $("#testimonialsContainer").offset().top - 80
         }, 100);
     });
+    $("#testimonialsSlideNav").click(() => {
+        console.log("Hello World, I was clicked");
+        $('html, body').animate({
+        scrollTop: $("#testimonialsContainer").offset().top - 80
+        }, 100);
+    });
     // contact us
     $("#contactUsNav").click(() => {
+        console.log("Hello World, I was clicked");
+        $('html, body').animate({
+        scrollTop: $("#contactUsContainer").offset().top - 30
+        }, 100);
+    });
+    $("#contactUsSlideNav").click(() => {
         console.log("Hello World, I was clicked");
         $('html, body').animate({
         scrollTop: $("#contactUsContainer").offset().top - 30
