@@ -33,7 +33,7 @@ export const Header =(): React.ReactElement => {
                     </div>
                     <Nav className="nav-slider-menu">
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="aboutSlideNav" className="nav-slider-menu-item">About</Nav.Link>
+                            <Nav.Link id="aboutSlideNav" className="nav-slider-menu-item active">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
                             <Nav.Link id="whatIdoSlideNav" className="nav-slider-menu-item">What I Do</Nav.Link>
@@ -74,19 +74,19 @@ export const Header =(): React.ReactElement => {
                         <Nav className="nav-menu-items">
                             <Nav.Item>
                                 <Nav.Link id="aboutNav" className="auto-padder"><span id="about" className="nav-span active">About</span></Nav.Link>
-                                <div className='nav-hover active'></div>
+                                <div id="navHoverAbout" className='nav-hover active'></div>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link id="whatIdoNav" className="auto-padder"><span id="whatIdo" className="nav-span">What I do</span></Nav.Link>
-                                <div className='nav-hover inactive'></div>
+                                <div id="navHoverWhatIdo" className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link id="experienceNav" className="auto-padder"><span id="experience" className="nav-span">Experience</span></Nav.Link>
-                                <div className='nav-hover inactive'></div>
+                                <div id="navHoverExperience" className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link id="projectsNav" className="auto-padder"><span id="projects" className="nav-span">Projects</span></Nav.Link>
-                                <div className='nav-hover inactive'></div>
+                                <div id="navHoverProjects" className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link id="moreNav" className="auto-padder">
@@ -102,7 +102,7 @@ export const Header =(): React.ReactElement => {
                                         </Nav.Item>
                                     </div>
                                 </Nav.Link>
-                                <div className='nav-hover inactive'></div>
+                                <div id="navHoverMore" className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
                                 <Button variant="primary" size="sm" className="nav-btn nav-btn-download" onClick={() => onDownloadCVClick('cv')}>Download</Button>

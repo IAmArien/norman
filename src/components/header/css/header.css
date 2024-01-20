@@ -172,6 +172,10 @@
     padding-bottom: 17px !important;
     border-bottom: 1px solid #e6e4e4 !important;
 }
+.nav-more-item.active {
+    background: #ef4444 !important;
+    color: #FFFFFF !important;
+}
 .nav-more-item:hover {
     background: #ef4444 !important;
     color: #FFFFFF !important;
