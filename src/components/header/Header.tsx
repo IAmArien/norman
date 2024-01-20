@@ -33,28 +33,28 @@ export const Header =(): React.ReactElement => {
                     </div>
                     <Nav className="nav-slider-menu">
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="aboutNav" className="nav-slider-menu-item">About</Nav.Link>
+                            <Nav.Link id="aboutSlideNav" className="nav-slider-menu-item">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="whatIdoNav" className="nav-slider-menu-item">What I Do</Nav.Link>
+                            <Nav.Link id="whatIdoSlideNav" className="nav-slider-menu-item">What I Do</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="experienceNav" className="nav-slider-menu-item">Experience</Nav.Link>
+                            <Nav.Link id="experienceSlideNav" className="nav-slider-menu-item">Experience</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="projectsNav" className="nav-slider-menu-item">Projects</Nav.Link>
+                            <Nav.Link id="projectsSlideNav" className="nav-slider-menu-item">Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="moreNav" className="nav-slider-menu-item">More</Nav.Link>
+                            <Nav.Link id="moreSlideNav" className="nav-slider-menu-item">More</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="skillsNav" className="nav-slider-menu-item sub-menu">Skills and Technologies</Nav.Link>
+                            <Nav.Link id="skillsSlideNav" className="nav-slider-menu-item sub-menu">Skills and Technologies</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="testimonialsNav" className="nav-slider-menu-item sub-menu">Testimonials</Nav.Link>
+                            <Nav.Link id="testimonialsSlideNav" className="nav-slider-menu-item sub-menu">Testimonials</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
-                            <Nav.Link id="contactUsNav" className="nav-slider-menu-item sub-menu">Contact Us</Nav.Link>
+                            <Nav.Link id="contactUsSlideNav" className="nav-slider-menu-item sub-menu">Contact Us</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="nav-slider-item">
                             <Button variant="primary" size="lg" className="nav-btn nav-btn-download responsive" onClick={() => onDownloadCVClick('cv')}>Download CV</Button>
