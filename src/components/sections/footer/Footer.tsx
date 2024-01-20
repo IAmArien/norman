@@ -40,13 +40,13 @@ export const Footer =(): React.ReactElement => {
                                 <div className="div-footer-links-wrapper">
                                     <h3 className="h3-social-accounts">Links</h3>
                                     <ul className="ul-service-accounts">
-                                        <li><a className="a-service-accounts" href="#about">About</a></li>
-                                        <li><a className="a-service-accounts" href="#whatIdo">What I Do</a></li>
-                                        <li><a className="a-service-accounts" href="#experience">Experience</a></li>
-                                        <li><a className="a-service-accounts" href="#projects">Projects</a></li>
-                                        <li><a className="a-service-accounts" href="#skills">Skills and Technologies</a></li>
-                                        <li><a className="a-service-accounts" href="#testimonials">Testimonials</a></li>
-                                        <li><a className="a-service-accounts" href="#contact">Contact Us</a></li>
+                                        <li><a className="a-service-accounts" id="aboutFooter">About</a></li>
+                                        <li><a className="a-service-accounts" id="whatIdoFooter">What I Do</a></li>
+                                        <li><a className="a-service-accounts" id="experienceFooter">Experience</a></li>
+                                        <li><a className="a-service-accounts" id="projectsFooter">Projects</a></li>
+                                        <li><a className="a-service-accounts" id="skillsFooter">Skills and Technologies</a></li>
+                                        <li><a className="a-service-accounts" id="testimonialsFooter">Testimonials</a></li>
+                                        <li><a className="a-service-accounts" id="contactFooter">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </Col>
