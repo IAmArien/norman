@@ -6,13 +6,16 @@ import { SocialAccount, Spacer, onSocialAccountClick } from "../../utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faFacebookMessenger, faGoogle, faLinkedin, faWindows } from "@fortawesome/free-brands-svg-icons";
 import { ContactUsFields, postContactUsFieldsAsync } from "../../../services";
+import { ModalState, displayModal, useAppDispatch } from "../../../redux";
 
 export const ContactUs =(): React.ReactElement => {
     const [name, setName] = React.useState<string>("");
     const [email, setEmail] = React.useState<string>("");
     const [subject, setSubject] = React.useState<string>("");
     const [intent, setIntent] = React.useState<string>("");
+
     const [buttonDisabled, setButtonDisabled] = React.useState<boolean>(true);
+    const dispatch = useAppDispatch();
 
     useEffect(() => {
         if (name.length <= 0) {
@@ -35,6 +38,12 @@ export const ContactUs =(): React.ReactElement => {
     }, [name, email, subject, intent]);
 
     const postContactUsFields = async () => {
+        dispatch(displayModal({
+            state: ModalState.SHOW,
+            title: null,
+            message: "Sending Information, Please wait!...",
+            success: false
+        }));
         const fields: ContactUsFields = {
             name: name,
             email: email,

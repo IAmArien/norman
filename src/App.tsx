@@ -16,6 +16,9 @@ import {
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { CVDownload } from './components/cvdownload/CVDownload';
 import { HireForm } from './components/hireform/HireForm';
+import { LoadingModal } from './components/modal/LoadingModal';
+import { Provider } from 'react-redux';
+import { store } from './redux';
 
 export const MainLayout =(): React.ReactElement => {
   return (
@@ -36,14 +39,18 @@ export const MainLayout =(): React.ReactElement => {
 export const App =(): React.ReactElement => {
   return (
     <React.Fragment>
-      <HashRouter>
-        <Routes>
-          <Route path='/' index element={<MainLayout />} />
-          <Route path='/norman' index element={<MainLayout />} />
-          <Route path={getSerializedPath('cv')} element={<CVDownload />} />
-          <Route path={getSerializedPath('hire')} element={<HireForm />} />
-        </Routes>
-      </HashRouter>
+      <Provider store={store}>
+        <LoadingModal>
+          <HashRouter>
+            <Routes>
+              <Route path='/' index element={<MainLayout />} />
+              <Route path='/norman' index element={<MainLayout />} />
+              <Route path={getSerializedPath('cv')} element={<CVDownload />} />
+              <Route path={getSerializedPath('hire')} element={<HireForm />} />
+            </Routes>
+          </HashRouter>
+        </LoadingModal>
+      </Provider>
     </React.Fragment>
   )
 }
