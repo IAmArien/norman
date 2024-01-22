@@ -51,13 +51,13 @@ export const Experience =(): React.ReactElement => {
                                 <StepContent TransitionProps={{ unmountOnExit: false }}>
                                     <div className="div-experience-description">
                                         <ul className="ul-experience-descriptions">
-                                            <li className="li-experience-content">Developing and Maintaining Android Application for Metrobank Investing app called Earnest using JAVA and Kotlin</li>
-                                            <li className="li-experience-content">Developing new user stories and doing bug fixes for React Native Mobile Application</li>
-                                            <li className="li-experience-content">Doing hotfixes, bug fixes, integrating new features, creating unit tests w/ SonarQube and JaCoCo</li>
-                                            <li className="li-experience-content">Uses Microsoft Azure DevOps for Agile-Scrum methodology</li>
-                                            <li className="li-experience-content">Implementing Android CI/CD with Azure Pipelines with deployment and releases to App Center</li>
-                                            <li className="li-experience-content">Creating web applications using React JS and participating to team's concerns including bug fixing and developing new user stories in back-end side</li>
-                                            <li className="li-experience-content">Used MVVM, traditional XML for UI layouts, and Koin DI for Android application</li>
+                                            <li className="li-experience-content">Developing and Maintaining Android Application for Metrobank investing app called Earnest</li>
+                                            <li className="li-experience-content">Integrating new user stories, doing bug fixes, and creeating unit tests with JUnit, JaCoCo, and SonarQube</li>
+                                            <li className="li-experience-content">Uses MS Azure DevOps for Agile-Scrum and CI/CD implementation</li>
+                                            <li className="li-experience-content">Uses Azure Pipelines to deploy applications to MS App Center</li>
+                                            <li className="li-experience-content">Used MVVM, Koin dependency injection, and XML for layout designs</li>
+                                            <li className="li-experience-content">Doing ground up for Earnest investing app from native application to React Native</li>
+                                            <li className="li-experience-content">Doing bug fixes and collaborating with scrum team for React Native</li>
                                         </ul>
                                     </div>
                                 </StepContent>

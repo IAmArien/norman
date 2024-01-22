@@ -5,7 +5,7 @@ import './css/about.css';
 
 import { HireType, NOCO, Spacer, onDownloadCVClick, onHireMeClick } from '../../';
 
-import NormanAboutPhoto from '../../../assets/images/NormanAboutPhoto.png';
+import NormanAboutPhoto from '../../../assets/images/NormanAboutPhoto.jpg';
 
 export const About =(): React.ReactElement => {
     return (
@@ -29,10 +29,11 @@ export const About =(): React.ReactElement => {
                                     <Button variant="outline-primary" size="lg" className="btn-about btn-download-cv" onClick={() => onDownloadCVClick('cv')}>Download CV</Button>
                                 </div>
                             </Col>
-                            <Col lg={5} md={6} sm={0}>
+                            <Col lg={5} md={6} sm={0} style={{ display: 'flex', flexDirection: 'column' }}>
                                 <Image src={NormanAboutPhoto} className="img-about-photo" />
                             </Col>
                         </Row>
+                        <Spacer style={{ height: '85px' }} />
                     </div>
                     <div className="div-about-responsive-mobile">
                         <Image src={NormanAboutPhoto} className="img-about-photo-responsive" />

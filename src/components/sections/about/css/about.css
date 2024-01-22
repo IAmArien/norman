@@ -64,8 +64,14 @@
     --bs-btn-hover-border-color: #ef4444;
 }
 .img-about-photo {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: flex-end;
+    justify-self: center;
+    box-shadow: 0px 0px 10px #00000014;
+    border: 5px solid #FFFFFF;
 }
 .img-about-photo-responsive {
     width: 300px;
@@ -74,7 +80,7 @@
     align-self: center;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #00000014;
-    border: 5px solid #ef4444;
+    border: 5px solid #FFFFFF;
 }
 .div-about-details-overlay {
     padding: 40px 20px 0px 20px;

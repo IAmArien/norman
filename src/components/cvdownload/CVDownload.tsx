@@ -38,7 +38,7 @@ export const CVDownload =(): React.ReactElement => {
                 <div className="div-pdf-viewer">
                     <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
                         <Viewer
-                            fileUrl={require('../../assets/documents/norman_cv.pdf')}
+                            fileUrl={require('../../assets/documents/norman_resume.pdf')}
                             defaultScale={SpecialZoomLevel.ActualSize}
                             enableSmoothScroll
                             viewMode={ViewMode.SinglePage}
