@@ -21,7 +21,7 @@ export enum SocialAccount {
 export const onSocialAccountClick =(account: SocialAccount) => {
     switch (account) {
         case SocialAccount.Google:
-            window.location.href = "mailto:noco.palisoc@up.phinma.edu.ph";
+            onHireMeClick(NOCO, [HireType.General]);
             break;
         case SocialAccount.Facebook:
             window.location.href = "https://www.facebook.com/blackhat1999";
@@ -33,7 +33,7 @@ export const onSocialAccountClick =(account: SocialAccount) => {
             window.location.href = "https://www.linkedin.com/in/norman-jay-palisoc-9bb512198/";
             break;
         case SocialAccount.Outlook:
-            window.location.href = "mailto:normanpalisoc@outlook.com";
+            onHireMeClick(NOPL, [HireType.General]);
             break;
         case SocialAccount.SMS:
             window.location.href = "sms:+639273894063";
@@ -43,8 +43,52 @@ export const onSocialAccountClick =(account: SocialAccount) => {
     }
 };
 
-export const onHireMeClick =(hireType: HireType) => {
-    window.location.href = `/norman/#hire?type=${hireType}`;
+const fixWorkOpportunityPath =(opp: string, index: number, hireType: HireType[]): string => {
+    if (hireType.length == 1) {
+        return opp;
+    } else {
+        if ((index + 1) == hireType.length) {
+            return opp;
+        } else {
+            return opp += " / ";
+        }
+    }
+}
+
+export const onHireMeClick =(email: string, hireType: HireType[]) => {
+    var workOp = `mailto:${email}?subject=`;
+    hireType.forEach((type, index) => {
+        switch (type) {
+            case HireType.General:
+                workOp += fixWorkOpportunityPath("Work Opportunity", index, hireType);
+                break;
+            case HireType.Android:
+                workOp += fixWorkOpportunityPath("Android", index, hireType);
+                break;
+            case HireType.Web:
+                workOp += fixWorkOpportunityPath("Web Application", index, hireType);
+                break;
+            case HireType.Consulting:
+                workOp += fixWorkOpportunityPath("IT Consulting", index, hireType);
+                break;
+            case HireType.Freelancing:
+                workOp += fixWorkOpportunityPath("Freelancing", index, hireType);
+                break;
+            case HireType.PartTime:
+                workOp += fixWorkOpportunityPath("Part-time", index, hireType);
+                break;
+            case HireType.Contract:
+                workOp += fixWorkOpportunityPath("Contract-based", index, hireType);
+                break;
+            case HireType.TechTalk:
+                workOp += fixWorkOpportunityPath("Invitation for Tech Talk Discussion", index, hireType);
+                break;
+            default:
+                workOp += fixWorkOpportunityPath("Work Opportunity", index, hireType);
+                break;
+        }
+    });
+    window.location.href = (workOp += " | Norman Palisoc");
 };
 
 export const onDownloadCVClick =(link: string) => {
@@ -54,6 +98,9 @@ export const onDownloadCVClick =(link: string) => {
 export const getSerializedPath =(path: string) => {
     return `/${path}`;
 };
+
+export const NOCO = "noco.palisoc@up.phinma.edu.ph";
+export const NOPL = "normanpalisoc@outlook.com";
 
 export * from './Spacer';
 export * from './Divider';

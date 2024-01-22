@@ -2,7 +2,7 @@ import React from "react";
 
 import './css/footer.css';
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { HireType, SocialAccount, Spacer, onDownloadCVClick, onHireMeClick, onSocialAccountClick } from "../../utils";
+import { HireType, NOCO, SocialAccount, Spacer, onDownloadCVClick, onHireMeClick, onSocialAccountClick } from "../../utils";
 
 export const Footer =(): React.ReactElement => {
     return (
@@ -28,11 +28,11 @@ export const Footer =(): React.ReactElement => {
                                 <div className="div-footer-links-wrapper">
                                     <h3 className="h3-social-accounts">Services</h3>
                                     <ul className="ul-service-accounts">
-                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Android)}>Android / Web App Development</a></li>
-                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Consulting)}>Consulting</a></li>
-                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Freelancing)}>Freelancing / Part Time</a></li>
-                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.Contract)}>Contract-based</a></li>
-                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(HireType.TechTalk)}>Tech Talk</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(NOCO, [HireType.Android, HireType.Web])}>Android / Web App Development</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(NOCO, [HireType.Consulting])}>Consulting</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(NOCO, [HireType.Freelancing, HireType.PartTime])}>Freelancing / Part Time</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(NOCO, [HireType.Contract])}>Contract-based</a></li>
+                                        <li><a className="a-service-accounts" onClick={() => onHireMeClick(NOCO, [HireType.TechTalk])}>Tech Talk</a></li>
                                     </ul>
                                 </div>
                             </Col>
@@ -53,8 +53,8 @@ export const Footer =(): React.ReactElement => {
                             <Col lg={3} md={3} sm={12}>
                                 <div className="div-footer-buttons">
                                     <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onDownloadCVClick('cv')}>Download CV</Button>
-                                    <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onHireMeClick(HireType.General)}>Hire Me</Button>
-                                    <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onHireMeClick(HireType.Consulting)}>Consulting</Button>
+                                    <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onHireMeClick(NOCO, [HireType.General])}>Hire Me</Button>
+                                    <Button variant="outline-primary" size="lg" className="btn-footer" onClick={() => onHireMeClick(NOCO, [HireType.Consulting])}>Consulting</Button>
                                 </div>
                             </Col>
                         </Row>
