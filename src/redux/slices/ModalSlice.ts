@@ -7,6 +7,7 @@ interface DisplayModalState {
     title?: string | null;
     message?: string | null;
     success: boolean | false;
+    loading: boolean | false;
 };
 
 type DisplayModalAction = {
@@ -14,13 +15,15 @@ type DisplayModalAction = {
     title?: string | null;
     message?: string | null;
     success: boolean | false;
+    loading: boolean | false;
 }
 
 const DisplayModalInitialState: DisplayModalState = {
     state: ModalState.HIDE,
     title: null,
     message: null,
-    success: false
+    success: false,
+    loading: false
 };
 
 const DisplayModalSlice = createSlice({
@@ -32,6 +35,7 @@ const DisplayModalSlice = createSlice({
             state.title = action.payload.title;
             state.message = action.payload.message;
             state.success = action.payload.success;
+            state.loading = action.payload.loading;
         },
         resetModalState: () => DisplayModalInitialState
     }

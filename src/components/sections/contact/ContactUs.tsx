@@ -40,9 +40,10 @@ export const ContactUs =(): React.ReactElement => {
     const postContactUsFields = async () => {
         dispatch(displayModal({
             state: ModalState.SHOW,
-            title: null,
-            message: "Sending Information, Please wait!...",
-            success: false
+            title: "Loading, Please wait!",
+            message: null,
+            success: false,
+            loading: true
         }));
         const fields: ContactUsFields = {
             name: name,
@@ -51,9 +52,36 @@ export const ContactUs =(): React.ReactElement => {
             intent: intent
         };
         await Promise.all([postContactUsFieldsAsync(fields)]).then(([response]) => {
-            console.log(response.data?.data?.description);
+            if (response.success) {
+                setName("");
+                setEmail("");
+                setSubject("");
+                setIntent("");
+                dispatch(displayModal({
+                    state: ModalState.SHOW,
+                    title: response.data?.data?.description,
+                    message: null,
+                    success: true,
+                    loading: false
+                }));
+            } else {
+                dispatch(displayModal({
+                    state: ModalState.SHOW,
+                    title: response.errorMessage,
+                    message: null,
+                    success: false,
+                    loading: false
+                }));
+            }
         }).catch((error) => {
             console.log(error);
+            dispatch(displayModal({
+                state: ModalState.SHOW,
+                title: "Something went wrong!",
+                message: `${error}`,
+                success: false,
+                loading: false
+            }));
         });
     };
 
