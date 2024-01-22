@@ -8,9 +8,18 @@ import './css/cvdownload.css';
 import { Button, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudDownloadAlt } from "@fortawesome/free-solid-svg-icons";
+import { postDownloadCVAsync } from "../../services/cv/DownloadCVService";
 
 export const CVDownload =(): React.ReactElement => {
-    const onDownloadCVClick =() => { }
+
+    const onDownloadCVClick = async () => {
+        await postDownloadCVAsync().then((response) => {
+            console.log(response)
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+
     return (
         <React.Fragment>
             <div className="div-pdf-container-wrapper">
